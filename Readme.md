@@ -6,25 +6,25 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
  
  (Apague essa seção)
  
-# NomedoProjeto
+# Site de Eventos
 
-**Número do Grupo**: XX <br>
+**Número do Grupo**: III <br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 202502579519  | Pietro Baldo Albuquerque  |
 | xx/xxxxxx  |  xxxx xxxx xxxxx |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Construção de um site de eventos nos moldes do site da Ingresse e Eventim 
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
+**Linguagens**: HTML e CSS<br>
 **Tecnologias**: xxxxxx<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
