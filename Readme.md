@@ -8,6 +8,7 @@
 | -- | -- |
 | 202502579519  | Pietro Baldo Albuquerque  |
 | 202407095771  |  João Victor de Carvalho Guimarãees |
+| --  |  NAME |
 
 ## Sobre 
 Construção de um site de eventos nos moldes do site da Ingresse e Eventim 
