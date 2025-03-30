@@ -25,13 +25,13 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
 </p>
  
-<b>ZZZ</b> - A plataforma deve fornece...
+<b>ZZZ</b> - A plataforma deve fornece
  
-<b>YYYY</b> - O objetivo da aplicação é....
+<b>YYYY</b> - O objetivo da aplicação é conectar o organizador do evento com o cliente
  
-<b>WWWW</b> - O principal objetivo da aplicação é a...
+<b>WWWW</b> - O principal objetivo da aplicação é fornece uma maneira de comprar e de reservar igressos para eventos
  
-<b>KKKK</b> - A plataforma deve gerenciar...
+<b>KKKK</b> - A plataforma deve gerenciar as reservas de igressos 
 </p>
  
 ---
@@ -39,22 +39,21 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 2. Como será o processo para cadastrar um novo clientetorneio?
  
 <p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
 
-<b>ZZZZ</b> - O cliente...
  
-<b>KKK</b> - O cliente...
+<b>YYYY</b> - O cliente deve cadrastra as informações dele 
+ 
+<b>WWWW</b> - Com o usuário logado, ele deverá ser capaz de comprar e fazer reservar 
+
+<b>ZZZZ</b> - O cliente deve receber a confirmação do cadastrado com sucessso
+ 
  
 ---
  
 ### 3. Como será a forma de adicionar produtos?
  
 <p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
+<b>XXXX</b> - O cliente ao cadastrar um evento deverá fornecer dia, data, hora, local, informações adicionais
 </p>
  
 <p align = "justify">
@@ -63,7 +62,6 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 <b>ZZZZ</b> - O produto....
  
-<b>XXXX</b> - O produto....
 
  
 ---
@@ -71,26 +69,27 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 4. Outras perguntas pertinentes ao contexto
 
 <p align = "justify">
-<b>XXXX</b> - Com a localização...
+<b>XXXX</b> - A localização é segura
+
+ <b>XXXX</b> - A localização tem acessibilidade 
+
  
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
+
  
 ---
  
 ### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
 <p align = "justify">
-<b>XXX</b> - O cliente....
+<b>XXX</b> - O cliente poderá entrar em contado por telefone para cadastramento de um novo evento
 </p>
  
 ### 6. Quais informações seriam interessante para o cliente?
 <p align = "justify">
    <b>XXX</b> - Informações...
    
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+   <b>ZZZZ</b> - O cliente usuário poderá acessar informações por meio da apa de usuário
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
+   <b>WWWWs</b> - O usuário poderá ver as regras dos evento, locais e data do evento.
    
 </p>
  
@@ -125,5 +124,4 @@ Através da aplicação da técnica, foi possível elicitar alguns dos primeiros
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 30/03/2025 | 0.1 | Criação do documento | João Victor |
