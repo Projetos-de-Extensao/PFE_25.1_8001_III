@@ -15,7 +15,7 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 |Matrícula | Aluno |
 | -- | -- |
 | 202502579519  | Pietro Baldo Albuquerque  |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 202407095771  |  João Victor de Carvalho Guimarãees |
 
 ## Sobre 
 Construção de um site de eventos nos moldes do site da Ingresse e Eventim 
