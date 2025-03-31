@@ -26,7 +26,7 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ### Mapa mental 2
  
-[![Mapa mental Brainstorm](mapamental.jpeg)
+[![Mapa mental Brainstorm](docs/assets/mapamental.jpeg)
  
 ## Conclusão
  
