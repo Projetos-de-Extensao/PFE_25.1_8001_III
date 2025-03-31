@@ -44,5 +44,5 @@ O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, 
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 31/03/25 | 1.0 | Criação do Documento | Enzo Zambrotti |
+| 31/03/25 | 1.0 | Adicionado Mapa Mental Brainstorm | Enzo Zambrotti |
 | dd/mm/yy | 2.0 | Adicionado Mapa mental 2 | xxxx xxxx |
