@@ -10,6 +10,7 @@
 | 202407095771  |  João Victor de Carvalho Guimarãees |
 | 202407321976 |  Vinícius Marinho Queiroz |
 | 202407260331 |  João Pedro Ginglass |
+| 202407095917 |  Enzo Zambrotti |
 
 ## Sobre 
 Construção de um site de eventos nos moldes do site da Ingresse e Eventim 
