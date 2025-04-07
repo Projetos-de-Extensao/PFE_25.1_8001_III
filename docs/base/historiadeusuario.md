@@ -34,3 +34,15 @@ US06 - Como gerente, quero exportar relatórios de vendas por período para cada
 US07 - Como gerente, quero receber alertas para baixa quantia de tickets para eventos para evitar rupturas.
 (Critério de Aceitação: Notificação quando estoque <10 tickets)
 </p>
+
+### 3. histórias para Clientes
+<p align = "justify">
+US08 - Como cliente, quero visualizar os eventos disponíveis no site para escolher com facilidade qual quero participar.
+(Critério de Aceitação: Lista de eventos com nome, data, horário e botão "ver mais")
+US09 - Como cliente, quero comprar ingressos pelo site para não precisar ir até o local físico.
+(Critério de Aceitação: Compra concluída após pagamento via Pix, cartão ou boleto)
+US10 - Como cliente, quero receber confirmação por e-mail após a compra para garantir que o ingresso foi emitido.
+(Critério de Aceitação: E-mail automático com detalhes do evento e QR Code para entrada)
+US11 - Como cliente, quero acessar meus ingressos comprados pela conta no site para apresentá-los na entrada.
+(Critério de Aceitação: Página "Meus ingressos")
+</p>
