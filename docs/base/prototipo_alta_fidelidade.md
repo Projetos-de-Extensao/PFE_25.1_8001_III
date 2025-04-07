@@ -22,30 +22,21 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 ### Versão 1.0
  
 ### Tela Login
-[![Prototipo 1](../assets/prototipo/prototipo_1.png)](../assets/prototipo/prototipo_1.png)
+[![Prototipo 1](https://www.figma.com/design/szWgDZmhfQidfwGcQQF96s/MusicVibe?node-id=1-349&t=cQ5rrw225MreO0qw-1)
  
 ### Tela Cadastro 1
  
-[![Prototipo 2](../assets/prototipo/prototipo_2.png)](../assets/prototipo/prototipo_2.png)
- 
-### Tela Cadastro 2
- 
-[![Prototipo 3](../assets/prototipo/prototipo_3.png)](../assets/prototipo/prototipo_3.png)
+[![Prototipo 2](https://www.figma.com/design/szWgDZmhfQidfwGcQQF96s/MusicVibe?node-id=1-349&t=cQ5rrw225MreO0qw-1)
+
  
 ### Tela Esqueceu Senha
  
 [![Prototipo 4](../assets/prototipo/prototipo_4.png)](../assets/prototipo/prototipo_4.png)
  
-### Tela do Feed
-[![Prototipo 5](../assets/prototipo/prototipo_5.png)](../assets/prototipo/prototipo_5.png)
- 
-### Tela Feed com configurações
-[![Prototipo 6](../assets/prototipo/prototipo_6.png)](../assets/prototipo/prototipo_6.png)
- 
+
 ### Tela Perfil
 [![Prototipo 7](../assets/prototipo/prototipo_7.png)](../assets/prototipo/prototipo_7.png)
  
-### Tela Cadastrar torneio 1
 
  
 
@@ -70,31 +61,13 @@ Na primeira versão do protótipo utilizamos a ferramenta <a href="https://mater
 ### Tela Perfil
 [![Prototipo 4](../assets/prototipo/editar_perfil.png)](../assets/prototipo/editar_perfil.png)
 
-### Tela do Feed
-[![Prototipo 5](../assets/prototipo/feed.png)](../assets/prototipo/feed.png)
-
-### Tela Cadastrar em um torneio
+### Tela Cadastrar em um Show
 [![Prototipo 6](../assets/prototipo/cadastrar_no_torneio.png)](../assets/prototipo/cadastrar_no_torneio.png)
 
-### Tela Cadastrar torneio
+### Tela Cadastrar Show
 [![Prototipo 7](../assets/prototipo/cadastrar_torneio.png)](../assets/prototipo/cadastrar_torneio.png)
 
-### Tela Cadastrar torneio 2
-[![Prototipo 8](../assets/prototipo/cadastrar_torneio_2.png)](../assets/prototipo/cadastrar_torneio_2.png)
-
-### Tela dos meus torneios
-[![Prototipo 9](../assets/prototipo/meus_torneios.png)](../assets/prototipo/meus_torneios.png)
-
-### Tela das chaves do torneio
-[![Prototipo 10](../assets/prototipo/ver_torneio.png)](../assets/prototipo/ver_torneio.png)
-
-### Tela das estatíscicas
-[![Prototipo 11](../assets/prototipo/ver_estatisticas.png)](../assets/prototipo/ver_estatisticas.png)
-
-### Tela de adicionar resultado das partidas
-[![Prototipo 12](../assets/prototipo/adicionar_resultado_da_partida.png)](../assets/prototipo/adicionar_resultado_da_partida.png)
-
-link para o <a href="https://www.figma.com/file/karoCnQtvMXWHEwdMuhQs0/Prototipo?node-id=0%3A1">Protótipo</a>
+link para o <a href="https://www.figma.com/design/szWgDZmhfQidfwGcQQF96s/MusicVibe?node-id=1-349&t=cQ5rrw225MreO0qw-1">Protótipo</a>
  
 ## Conclusão
  
@@ -114,7 +87,5 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
  
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 07/09/20 | 1.0 | Criação do documento | Lucas Alexandre e Matheus Estanislau  |
-| 07/09/20 | 1.1 | Adicionado as imagens do protótipo | Lucas Alexandre e Matheus Estanislau  |
-| 07/09/20 | 1.2 | Adicionado conclusão e referências  | Lucas Alexandre e Matheus Estanislau  |
-| 26/10/20 | 2.0 | Adicionada a versão 2.0 do protótipo| João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan|
+| 07/04/25 | 1.0 | Criação do documento | João Victor  |
+| 00/00/00 | 2.0 | Adicionada a versão 2.0 do protótipo| |
