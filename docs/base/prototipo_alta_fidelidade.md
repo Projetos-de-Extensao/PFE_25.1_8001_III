@@ -21,12 +21,15 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
  
 ### Versão 1.0
  
-### Tela Login
+### Tela Home
 [![Prototipo 1](https://www.figma.com/design/szWgDZmhfQidfwGcQQF96s/MusicVibe?node-id=1-349&t=cQ5rrw225MreO0qw-1)
+
+### Tela Home cadastrada 
+[![Prototipo 1](docs/assets/Ticket Booking Platform (Community) – Figma - Google Chrome 07_04_2025 10_27_27.png)
  
 ### Tela Cadastro 1
  
-[![Prototipo 2](https://www.figma.com/design/szWgDZmhfQidfwGcQQF96s/MusicVibe?node-id=1-349&t=cQ5rrw225MreO0qw-1)
+[![Prototipo 2](...assets/Ticket Booking Platform (Community) – Figma - Google Chrome 07_04_2025 10_27_12.png)
 
  
 ### Tela Esqueceu Senha
