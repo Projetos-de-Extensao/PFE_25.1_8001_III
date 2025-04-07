@@ -2,6 +2,11 @@
 
 <p align = "justify">
 Historias de Usuário se refere as expectativas que são esperadas para os diversos usuários de um sistema, como vendedores, gerentes, clientes etc.
+</p> 
+<p>
+  Elas ajudam a priorizar o que deve ser desenvolvido e manter o foco na experiência do usuário final.Usadas para ajudar a equipe a entender o que o usuário precisa e por quê.
+  Exemplo:
+Como cliente de um app de eventos, Quero visualizar meus ingressos,Para me organizar om mais facilidade.
 </p>
 
 ### 1. Histórias para Vendedores
