@@ -1,0 +1,171 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #001f3f;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav .btn {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.search-bar {
+    background-color: #001f3f;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 5px solid #007bff;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.categories {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    background-color: #007bff;
+}
+
+.top-picks {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.top-picks h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social a,
+.footer .links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer .contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
