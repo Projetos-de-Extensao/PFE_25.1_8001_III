@@ -8,9 +8,9 @@
 
 ## Introdução:
 
-- **Contexto:** Ter um site especifico para eventos musicais que serve como hub pra todos os 
-- **Objetivo:** Nosso objetivo é criar um site para eventos de musica funcional e prático
-- **Publico Alvo:** Pessoas com interesse em shows musicais
+- **Contexto:** Ter um site especifico para eventos musicais que serve como hub pra todos os tipos de shows musicais em um local.
+- **Objetivo:** Nosso objetivo é criar um site para eventos musicais especializado para exclusivamente fans de shows musicais, de Pop, a Rock e até Metal.
+- **Publico Alvo:** Nosso publico alvo são pessoas que tem interesse em shows musicais, sem foco especifico em apenas um genero musical.
 - **Escopo:** 
 
 ## Fases do Design Thinking
