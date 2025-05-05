@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
 }
 
-/* HEADER */
 .header {
     background-color: #04092C;
     color: white;
@@ -23,8 +22,15 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    transition: transform 0.3s ease;
     
+}
+
+.header.hidden {
+    transform: translateY(-100%); /* Oculta o header ao rolar para baixo */
 }
 
 .header .container {
@@ -454,7 +460,22 @@ body {
     color: white;
 }
 
-/* FOOTER */
+.white-background {
+    background-image: linear-gradient(to top, #ffffff 25%, transparent 100%);
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    top: 1575px; 
+    left: auto; 
+}
+.white-background-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 500px;
+    
+}
+
 .footer {
     background-color: #001f3f;
     color: white;
