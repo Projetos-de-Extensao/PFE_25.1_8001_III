@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrar - MusicVibe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-modal">
+        <div class="login-modal-content">
+            <button class="close-btn" aria-label="Fechar">&times;</button>
+            <div class="login-modal-header">
+                <span class="welcome-text">Bem-vindo ao <span class="brand">LOREM</span></span>
+                <div class="signup-link">
+                    <span>Não tem uma conta?</span>
+                    <a href="#" class="signup">Cadastre-se</a>
+                </div>
+            </div>
+            <h2 class="signin-title">Entrar</h2>
+            <div class="social-row">
+                <button class="social-btn google">
+                    <img src="src/google.svg" alt="Google" class="icon">
+                    <span>Entrar com Google</span>
+                </button>
+                <button class="social-btn icon-btn" aria-label="Entrar com Facebook">
+                    <img src="src/facebook.svg" alt="Facebook" class="icon">
+                </button>
+                <button class="social-btn icon-btn" aria-label="Entrar com Apple">
+                    <img src="src/apple.svg" alt="Apple" class="icon">
+                </button>
+            </div>
+            <form class="login-form">
+                <label class="input-label" for="username">Digite seu usuário ou e-mail</label>
+                <input id="username" type="text" class="input" placeholder="Usuário ou e-mail" autocomplete="username">
+                <label class="input-label" for="password">Digite sua senha</label>
+                <input id="password" type="password" class="input" placeholder="Senha" autocomplete="current-password">
+                <div class="forgot-row">
+                    <a href="#" class="forgot-link">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="signin-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
