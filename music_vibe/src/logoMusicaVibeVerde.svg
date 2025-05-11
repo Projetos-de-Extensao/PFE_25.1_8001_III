@@ -1,0 +1,11 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nota musical -->
+  <circle cx="30" cy="30" r="10" fill="#1DB954"/>
+  <rect x="35" y="15" width="5" height="25" fill="#1DB954"/>
+  <circle cx="40" cy="20" r="6" fill="#1DB954"/>
+
+  <!-- Nome do site -->
+  <text x="60" y="35" font-family="Arial, sans-serif" font-size="24" fill="#333">
+    MusicVibe
+  </text>
+</svg>
