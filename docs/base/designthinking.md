@@ -17,20 +17,29 @@
 
 ### *3.1 - Empatia*
 
-- N/A
+- Pesquisa:
+- Insights:
+- Personas:
 
 ### *3.2 - Definição*
 
-- N/A
+- Problema Central:
+- Pontos de Vista (POV):
 
 ### *3.3 - Ideação*
 
-- N/A
+- Brainstorming:
+- Seleção de Ideias:
+- Ideias Selecionadas:
 
 ### *3.4 - Prototipágem*
 
-- N/A
+- Descrição do Protótipo:
+- Materiais Utilizados:
+- Testes Realizados:
 
 ### *3.5 - Teste*
 
-- N/A
+- Feedback dos Usuários:
+- Ajustes Realizados:
+- Resultados Finais:
