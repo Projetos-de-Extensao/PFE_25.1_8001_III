@@ -17,29 +17,30 @@
 
 ### *3.1 - Empatia*
 
-- Pesquisa:
-- Insights:
-- Personas:
+- Pesquisa: N/A
+- Insights: N/A
+- Personas: N/A
 
 ### *3.2 - Definição*
 
-- Problema Central:
-- Pontos de Vista (POV):
+- Problema Central: Queremos criar uma palataforme especializada, um hub especifico pra quem quer achar mais shows dos generos musicais que lhes interessam.
+- Pontos de Vista (POV): N/A
 
 ### *3.3 - Ideação*
 
-- Brainstorming:
-- Seleção de Ideias:
-- Ideias Selecionadas:
+- Brainstorming: N/A
+- Seleção de Ideias: Fomos escolhendo com base do que facilitaria a utilização do site para os usuários, todos sugerindo ideias mas apenas um implementando elas
+no site.
+- Ideias Selecionadas: N/A
 
 ### *3.4 - Prototipágem*
 
-- Descrição do Protótipo:
-- Materiais Utilizados:
-- Testes Realizados:
+- Descrição do Protótipo: Nos usamos inspiração de sites como o 
+- Recursos Utilizados: Foi usado a ferramente do Figma para fazer o protótipo
+- Testes Realizados: N/A
 
 ### *3.5 - Teste*
 
-- Feedback dos Usuários:
-- Ajustes Realizados:
-- Resultados Finais:
+- Feedback dos Usuários: N/A
+- Ajustes Realizados: N/A
+- Resultados Finais: N/A
