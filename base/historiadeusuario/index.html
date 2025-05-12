@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>wcag - PFE</title>
+    <title>Historiadeusuario - PFE</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "wcag";
-        var mkdocs_page_input_path = "base\\avaliawcagwai.md";
+        var mkdocs_page_name = "Historiadeusuario";
+        var mkdocs_page_input_path = "base\\historiadeusuario.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -51,9 +51,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../aht/">Aht</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">wcag</a>
-    <ul class="current">
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../avaliawcagwai/">wcag</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../designthinking/">Design Thinking</a>
                   </li>
@@ -61,7 +59,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../entrevista/">Entrevista</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../historiadeusuario/">Historiadeusuario</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Historiadeusuario</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-historias-para-vendedores">1. Histórias para Vendedores</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-historias-para-gerentes">2. Historias para Gerentes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-historias-para-clientes">3. histórias para Clientes</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../mapa_mental/">Mapas Mentais</a>
                   </li>
@@ -104,7 +110,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Base</li>
-      <li class="breadcrumb-item active">wcag</li>
+      <li class="breadcrumb-item active">Historiadeusuario</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -115,53 +121,58 @@
               
                 <h2 id="introducao">Introdução</h2>
 <p align = "justify">
-    São as diretrizes de acessibilidade para o conteúdo da web. Seus 78 critérios garantem que um conteúdo digital possa ser consumido por todas as pessoas nos mais diversos dispositivos. Isso vale para computador, celular e até aparelho de televisão.
+Historias de Usuário se refere as expectativas que são esperadas para os diversos usuários de um sistema, como vendedores, gerentes, clientes etc.
+</p>
+<p>
+  Elas ajudam a priorizar o que deve ser desenvolvido e manter o foco na experiência do usuário final.Usadas para ajudar a equipe a entender o que o usuário precisa e por quê.
+  Exemplo:
+Como cliente de um app de eventos, Quero visualizar meus ingressos,Para me organizar com mais facilidade.
 </p>
 
-<h2 id="relatorio">Relatório</h2>
+<h3 id="1-historias-para-vendedores">1. Histórias para Vendedores</h3>
 <p align = "justify">
-    A equipe levantou os problemas relativos as diretrizes do Wcag..  
+US01 - Como vendedor, quero achar e manter informação dos tickets dos clientes para agilizar o atendimento e processamento.
+(Critério de Aceitação: Resultados em <2 segundos, com sugestão ao digitar)
+
+US02 - Como vendedor, quero aplicar descontos personalizados para fidelizar clientes.
+(Critério de Aceitação: Campo com validação de limite por perfil de usuário)
+
+US03 - Como vendedor, quero ver disponibilidade de tickets para eventos durante a venda para evitar prometer tickets para eventos indisponíveis.
+(Critério de Aceitação: Indicador visual "ESGOTADO" se quantidade = 0)
 </p>
 
-<h2 id="problemas-das-diretrizes">Problemas das Diretrizes</h2>
-<h2 id="conclusao">Conclusão</h2>
-<p>O Wcag é um....   </p>
-<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
-<blockquote>
-<p>Wcag: disponivel em :https://www../</p>
-<p>O que é Wcag, disponivel em :https://www...</p>
-</blockquote>
-<h2 id="autores">Autor(es)</h2>
-<table>
-<thead>
-<tr>
-<th>Data</th>
-<th>Versão</th>
-<th>Descrição</th>
-<th>Autor(es)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>06/06/24</td>
-<td>1.0</td>
-<td>Criação do documento</td>
-<td>xxx xxxx</td>
-</tr>
-<tr>
-<td>09/09/20</td>
-<td>2.0</td>
-<td>Adicionada visão produto</td>
-<td>xxxx xxxx</td>
-</tr>
-</tbody>
-</table>
+<h3 id="2-historias-para-gerentes">2. Historias para Gerentes</h3>
+<p align = "justify">
+US05 - Como gerente, quero exportar relatórios de vendas por período para análise mensal.
+(Critério de Aceitação: Opções de PDF/Excel com gráficos embutidos)
+
+US06 - Como gerente, quero exportar relatórios de vendas por período para cada evento do site, para análise mensal.
+(Critério de Aceitação: Opções de PDF/Excel com gráficos embutidos)
+
+US07 - Como gerente, quero receber alertas para baixa quantia de tickets para eventos para evitar rupturas.
+(Critério de Aceitação: Notificação quando estoque <10 tickets)
+</p>
+
+<h3 id="3-historias-para-clientes">3. histórias para Clientes</h3>
+<p align = "justify">
+US08 - Como cliente, quero visualizar os eventos disponíveis no site para escolher com facilidade qual quero participar.
+(Critério de Aceitação: Lista de eventos com nome, data, horário e botão "ver mais")
+
+US09 - Como cliente, quero comprar ingressos pelo site para não precisar ir até o local físico.
+(Critério de Aceitação: Compra concluída após pagamento via Pix, cartão ou boleto)
+
+US10 - Como cliente, quero receber confirmação por e-mail após a compra para garantir que o ingresso foi emitido.
+(Critério de Aceitação: E-mail automático com detalhes do evento e QR Code para entrada)
+
+US11 - Como cliente, quero acessar meus ingressos comprados pela conta no site para apresentá-los na entrada.
+(Critério de Aceitação: Página "Meus ingressos")
+</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../aht/" class="btn btn-neutral float-left" title="Aht"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../designthinking/" class="btn btn-neutral float-right" title="Design Thinking">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../entrevista/" class="btn btn-neutral float-left" title="Entrevista"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mapa_mental/" class="btn btn-neutral float-right" title="Mapas Mentais">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -184,10 +195,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../aht/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../entrevista/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../designthinking/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../mapa_mental/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
