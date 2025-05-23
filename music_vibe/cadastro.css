@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset e base */
 body, html {
     margin: 0;
     padding: 0;
@@ -17,8 +17,8 @@ body, html {
 /* Header */
 .header {
     background: #0a1633;
-    padding: 0;
     min-height: 64px;
+    padding: 0;
 }
 .header-container {
     display: flex;
@@ -56,7 +56,8 @@ body, html {
 }
 
 /* Cadastro Section */
-.cadastro-section {
+.cadastro-section,
+.cadastro-evento-section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -64,27 +65,45 @@ body, html {
     padding: 48px 0 32px 0;
     background: #fff;
 }
-.cadastro-form {
+
+.cadastro-form,
+.cadastro-evento-form {
     width: 100%;
     max-width: 900px;
     background: #fff;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 32px 32px 24px 32px;
     margin: 0 auto;
 }
-.cadastro-form h2 {
+
+.cadastro-form h2,
+.cadastro-evento-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #6d6d6d;
     margin-bottom: 32px;
     margin-top: 0;
 }
+
+.label-azul,
+.form-label {
+    color: #0a2940;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
 .form-row {
     display: flex;
     gap: 24px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.form-row label {
+    margin-bottom: 8px;
 }
 .form-row.center {
     justify-content: center;
@@ -94,53 +113,87 @@ body, html {
     display: flex;
     flex-direction: column;
 }
-.full-width {
+.full-width,
+.input-full {
     width: 100%;
 }
-.cadastro-form label {
-    font-size: 15px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 6px;
-}
+
 .cadastro-form input[type="text"],
 .cadastro-form input[type="email"],
 .cadastro-form input[type="password"],
-.cadastro-form input[type="date"] {
-    padding: 12px 16px;
+.cadastro-form input[type="date"],
+.cadastro-evento-form input[type="text"],
+.cadastro-evento-form input[type="email"],
+.cadastro-evento-form input[type="password"],
+.cadastro-evento-form input[type="date"] {
+    padding: 14px 18px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background: #f6f6f6;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.07);
     outline: none;
     transition: box-shadow 0.2s;
+    margin-top: 2px;
 }
+
 .cadastro-form input[type="text"]:focus,
 .cadastro-form input[type="email"]:focus,
 .cadastro-form input[type="password"]:focus,
-.cadastro-form input[type="date"]:focus {
+.cadastro-form input[type="date"]:focus,
+.cadastro-evento-form input[type="text"]:focus,
+.cadastro-evento-form input[type="email"]:focus,
+.cadastro-evento-form input[type="password"]:focus,
+.cadastro-evento-form input[type="date"]:focus {
     box-shadow: 0 0 0 2px #00b3ff33;
 }
+
+.cadastro-evento-form textarea,
+.cadastro-form textarea {
+    min-height: 220px;
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #f6f6f6;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    outline: none;
+    resize: none;
+    transition: box-shadow 0.2s;
+}
+.cadastro-evento-form textarea:focus,
+.cadastro-form textarea:focus {
+    box-shadow: 0 0 0 2px #00b3ff33;
+}
+
 .btn-avancar {
     background: #0a2940;
     color: #fff;
     border: none;
-    border-radius: 6px;
-    padding: 12px 64px;
-    font-size: 17px;
-    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 64px;
+    font-size: 18px;
+    font-weight: 700;
     cursor: pointer;
     margin-top: 16px;
     transition: background 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn-avancar:hover {
     background: #00b3ff;
 }
+
 @media (max-width: 900px) {
-    .cadastro-form {
+    .cadastro-form,
+    .cadastro-evento-form {
         max-width: 100%;
+        padding: 16px 8px 16px 8px;
     }
     .form-row {
         flex-direction: column;

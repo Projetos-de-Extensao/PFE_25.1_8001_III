@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicVibe</title>
-    <link rel="stylesheet" href="cadastroDeEvento.css">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
     <header class="header">
@@ -32,21 +32,23 @@
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite o nome da clínica" class="input-full">
             </div>
-            <div class="form-row double">
+            <div class="form-row">
                 <div class="form-col">
                     <label for="data" class="form-label">Datas do evento</label>
                     <input type="text" id="data" name="data" placeholder="Selecione as datas">
+                </div>
+            </div>
+            <div class="form-row double">
+                <div class="form-col">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" id="estado" name="estado" placeholder="Digite o CPF/CNPJ">
                 </div>
                 <div class="form-col">
                     <label for="cidade" class="form-label">Cidade</label>
                     <input type="text" id="cidade" name="cidade" placeholder="Selecione sua uf">
                 </div>
             </div>
-            <div class="form-row triple">
-                <div class="form-col">
-                    <label for="estado" class="form-label">Estado</label>
-                    <input type="text" id="estado" name="estado" placeholder="Digite o CPF/CNPJ">
-                </div>
+            <div class="form-row double">
                 <div class="form-col">
                     <label for="hora-inicio" class="form-label">Hora de início</label>
                     <input type="text" id="hora-inicio" name="hora-inicio" placeholder="Digite o horário">
