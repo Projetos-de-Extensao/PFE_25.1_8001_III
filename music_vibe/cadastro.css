@@ -229,6 +229,7 @@ body, html {
     padding: 40px 0 0 0;
     margin-top: 48px;
 }
+/* Footer Columns */
 .footer-columns {
     display: flex;
     justify-content: space-between;
@@ -236,15 +237,18 @@ body, html {
     flex-wrap: wrap;
     gap: 32px;
 }
+/* Social */
 .social {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 .social a img {
     width: 40px;
     height: 40px;
 }
+
 .links {
     display: flex;
     flex-direction: column;
