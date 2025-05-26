@@ -237,7 +237,7 @@ body, html {
     flex-wrap: wrap;
     gap: 32px;
 }
-/* Social */
+
 .social {
     display: flex;
     flex-direction: column;
