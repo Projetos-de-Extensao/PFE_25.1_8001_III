@@ -1,11 +1,9 @@
-import React from "react";
-
-const Header = () => {
-    
+function Header()  {
+  return (  
         <header>
             <div className="container">
                 <div className="logo">
-                    <img src="src/logoMusicaVibe.svg" alt="Logo MusicVibe" />
+                    {/*<img src="src/logoMusicaVibe.svg" alt="Logo MusicVibe" />*/}
                 </div>
                 <div className="header-right">
                     <nav className="nav">
@@ -29,7 +27,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    
+  )
 };
 
 export default Header;

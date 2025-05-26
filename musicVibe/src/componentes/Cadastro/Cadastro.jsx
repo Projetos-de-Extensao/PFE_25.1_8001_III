@@ -1,5 +1,5 @@
 import React from "react";
-import "../cadastro.css";
+import "./cadastro.css";
 
 export default function Cadastro() {
   return (

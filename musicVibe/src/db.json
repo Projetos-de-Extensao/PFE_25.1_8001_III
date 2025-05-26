@@ -1,0 +1,13 @@
+{
+    "produto":[
+        {
+            "id":1,
+            "nome": "",
+            "descricao": "",
+            "preco": 0.00,
+            "estoque": 0,
+            "categoria": "Tipos musicais"
+        },
+
+    ]
+}

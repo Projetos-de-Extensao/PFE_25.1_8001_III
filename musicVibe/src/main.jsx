@@ -9,17 +9,3 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-const CampoTexto = (props) => {
-  return (
-    <div className="campo-texto">
-      <label>{props.label}</label>
-      <input
-        placeholder='Digite o seu nome'
-        type="text"
-        value={props.valor}
-        onChange={(evento) => props.aoAlterado(evento.target.value)}
-        required={props.obrigatorio}
-      />
-    </div>
-  );
-}

@@ -229,3 +229,235 @@ body, html {
     color: var(--color-footer-bottom);
     background: var(--color-footer-bg);
 }
+
+/* Variáveis de cores comuns */
+:root {
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-header-bg: #0a1633;
+    --color-header-bg-alt: #0a1633;
+    --color-footer-bg: #0a1633;
+    --color-footer-border: #22305a;
+    --color-bg: #fff;
+    --color-bg-light: #f6f6f6;
+    --color-shadow: rgba(0,0,0,0.08);
+    --color-shadow-focus: #007bff33;
+    --color-text: #222;
+    --color-text-light: #6d6d6d;
+    --color-label: #0a1633;
+    --color-link: #007bff;
+    --color-link-hover: #0056b3;
+    --color-border: #e5e8ef;
+    --color-footer-bottom: #b0b0b0;
+}
+
+/* Reset e base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Cadastro Section */
+.cadastro-section,
+.cadastro-evento-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 70vh;
+    padding: 48px 0 32px 0;
+    background: var(--color-bg);
+}
+
+.cadastro-form,
+.cadastro-evento-form {
+    width: 100%;
+    max-width: 900px;
+    background: var(--color-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px var(--color-shadow);
+    padding: 32px 32px 24px 32px;
+    margin: 0 auto;
+}
+
+.cadastro-form h2,
+.cadastro-evento-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.label-azul,
+.form-label {
+    color: var(--color-label);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.form-row label {
+    margin-bottom: 8px;
+}
+.form-row.center {
+    justify-content: center;
+}
+.form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.full-width,
+.input-full {
+    width: 100%;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"],
+.cadastro-form input[type="date"],
+.cadastro-evento-form input[type="text"],
+.cadastro-evento-form input[type="email"],
+.cadastro-evento-form input[type="password"],
+.cadastro-evento-form input[type="date"] {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    background: var(--color-bg-light);
+    font-size: 16px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px var(--color-shadow);
+    outline: none;
+    transition: box-shadow 0.2s;
+    margin-top: 2px;
+}
+
+.cadastro-form input[type="text"]:focus,
+.cadastro-form input[type="email"]:focus,
+.cadastro-form input[type="password"]:focus,
+.cadastro-form input[type="date"]:focus,
+.cadastro-evento-form input[type="text"]:focus,
+.cadastro-evento-form input[type="email"]:focus,
+.cadastro-evento-form input[type="password"]:focus,
+.cadastro-evento-form input[type="date"]:focus {
+    box-shadow: 0 0 0 2px var(--color-shadow-focus);
+}
+
+.cadastro-evento-form textarea,
+.cadastro-form textarea {
+    min-height: 220px;
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    background: var(--color-bg-light);
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px var(--color-shadow);
+    outline: none;
+    resize: none;
+    transition: box-shadow 0.2s;
+}
+.cadastro-evento-form textarea:focus,
+.cadastro-form textarea:focus {
+    box-shadow: 0 0 0 2px var(--color-shadow-focus);
+}
+
+.btn-avancar {
+    background: var(--color-header-bg-alt);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 64px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-avancar:hover {
+    background: var(--color-link);
+}
+
+@media (max-width: 900px) {
+    .cadastro-form,
+    .cadastro-evento-form {
+        max-width: 100%;
+        padding: 16px 8px 16px 8px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+
+/* Social */
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social a img {
+    width: 40px;
+    height: 40px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.links a {
+    color: var(--color-bg);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.links a:hover {
+    color: var(--color-link);
+}
+.contact p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+.contact img {
+    width: 18px;
+    height: 18px;
+}
+.footer-bottom {
+    border-top: 1px solid var(--color-footer-border);
+    margin-top: 32px;
+    padding: 16px 0 8px 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-footer-bottom);
+    background: var(--color-footer-bg);
+}
