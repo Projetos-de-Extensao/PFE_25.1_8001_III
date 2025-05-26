@@ -13,6 +13,7 @@
     --color-btn-hover: #007bff;
 }
 
+/* Carrinho */
 .carrinho-main {
     display: flex;
     justify-content: flex-start;
@@ -23,7 +24,7 @@
     gap: 80px;
     background: var(--color-bg);
 }
-
+/* Carrinho, Lista */
 .carrinho-lista {
     flex: 2;
 }
@@ -127,6 +128,7 @@
     max-width: 370px;
 }
 
+/* Carrinho, Resumo */
 .carrinho-box {
     background: var(--color-bg);
     border-radius: 18px;
