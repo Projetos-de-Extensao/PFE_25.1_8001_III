@@ -389,6 +389,7 @@ body {
     background-color: var(--color-primary-dark);
 }
 
+/* Event Section */
 .event-list {
     display: flex;
     flex-direction: column;
@@ -492,6 +493,7 @@ body {
     
 }
 
+/* Footer */
 .footer {
     background-color: var(--color-footer-bg);
     color: var(--color-bg-white);
