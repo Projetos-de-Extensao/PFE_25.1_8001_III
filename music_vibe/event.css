@@ -1,11 +1,27 @@
+/* Variáveis de cores comuns */
+:root {
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-header-bg: #04092C;
+    --color-footer-bg: #04092C;
+    --color-bg: #f8f9fa;
+    --color-bg-white: #fff;
+    --color-shadow: rgba(0,0,0,0.08);
+    --color-shadow-2: rgba(0,0,0,0.10);
+    --color-text: #333;
+    --color-link: #007bff;
+    --color-link-hover: #0056b3;
+    --color-footer-bottom: #fff;
+}
+
 /* General Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .container {
@@ -16,13 +32,13 @@ body {
 
 .container-event-page {
     width: 100%;
-    background: #f8f9fa;
+    background: var(--color-bg);
 }
 
 /* Header */
 .header {
-    background-color: #04092C;
-    color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-footer-bottom);
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
@@ -30,7 +46,7 @@ body {
 }
 
 .nav a {
-    color: white;
+    color: var(--color-footer-bottom);
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
@@ -38,7 +54,7 @@ body {
 }
 
 .nav a:hover {
-    color: #007bff;
+    color: var(--color-link);
 }
 
 /* Event Banner */
@@ -48,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--color-footer-bottom);
 }
 
 .event__background-wrapper {
@@ -101,7 +117,7 @@ body {
 .event-image {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 16px var(--color-shadow);
 }
 
 .event-image {
@@ -111,10 +127,10 @@ body {
 
 /* Tickets Section */
 .summary {
-    background-color: #fff;
+    background-color: var(--color-bg-white);
     padding: 1.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px var(--color-shadow);
     max-width: 350px;
     min-width: 300px;
     margin: 0 0 2rem 0;
@@ -149,8 +165,8 @@ body {
 }
 
 .buy-tickets .btn {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
     padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 24px;
@@ -162,15 +178,15 @@ body {
 }
 
 .buy-tickets .btn:hover {
-    background-color: #0056b3;
+    background-color: var(--color-primary-dark);
 }
 
 /* Description Section */
 .description-event {
-    background: #fff;
+    background: var(--color-bg-white);
     padding: 2.5rem 2rem 2rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px var(--color-shadow);
     margin: 0 auto 2rem auto;
     max-width: 900px;
 }
@@ -213,21 +229,21 @@ body {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px var(--color-shadow-2);
 }
 
 .summary-bottom {
     margin: 0 auto 0 auto;
     max-width: 400px;
     min-width: 260px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px var(--color-shadow);
 }
 
 .main-banner-btn {
     margin-top: 1rem;
     width: 100%;
-    background: #007bff;
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-bg-white);
     border: none;
     border-radius: 24px;
     padding: 0.7rem 0;
@@ -238,7 +254,7 @@ body {
 }
 
 .main-banner-btn:hover {
-    background: #0056b3;
+    background: var(--color-primary-dark);
 }
 
 .event__section {
@@ -288,8 +304,8 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #04092C;
-    color: white;
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-bottom);
     text-align: center;
     padding: 1rem 0;
 }

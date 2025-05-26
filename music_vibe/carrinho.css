@@ -1,3 +1,18 @@
+/* Variáveis de cores comuns */
+:root {
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-bg: #fff;
+    --color-bg-light: #f6f6f6;
+    --color-shadow: none;
+    --color-text: #111;
+    --color-text-secondary: #222;
+    --color-label: #111;
+    --color-border: #e5e8ef;
+    --color-btn-bg: #000;
+    --color-btn-hover: #007bff;
+}
+
 .carrinho-main {
     display: flex;
     justify-content: flex-start;
@@ -6,7 +21,7 @@
     margin: 48px auto 0 auto;
     padding: 0 24px;
     gap: 80px;
-    background: #fff;
+    background: var(--color-bg);
 }
 
 .carrinho-lista {
@@ -17,7 +32,7 @@
     font-size: 1.35rem;
     font-weight: 600;
     margin-bottom: 36px;
-    color: #111;
+    color: var(--color-text);
     letter-spacing: -0.5px;
 }
 
@@ -28,7 +43,7 @@
     margin-bottom: 38px;
     background: none;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: var(--color-shadow);
     padding: 0;
     transition: none;
 }
@@ -40,7 +55,7 @@
     object-fit: cover;
     flex-shrink: 0;
     border: none;
-    background: #f6f8fa;
+    background: var(--color-bg-light);
 }
 
 .carrinho-info {
@@ -52,7 +67,7 @@
 
 .carrinho-data {
     font-size: 1rem;
-    color: #222;
+    color: var(--color-text-secondary);
     margin-bottom: 2px;
     line-height: 1.2;
     font-weight: 400;
@@ -62,14 +77,14 @@
 .carrinho-nome {
     font-size: 1.08rem;
     font-weight: 700;
-    color: #111;
+    color: var(--color-label);
     margin-bottom: 2px;
     line-height: 1.2;
     font-family: 'Inter', Arial, sans-serif;
 }
 .carrinho-local {
     font-weight: 400;
-    color: #111;
+    color: var(--color-label);
     font-size: 1.08rem;
     font-family: 'Inter', Arial, sans-serif;
 }
@@ -84,14 +99,14 @@
 }
 
 .carrinho-parcelamento {
-    color: #00b86b;
+    color: var(--color-primary);
     font-weight: 600;
     font-size: 1rem;
     margin-right: 6px;
 }
 
 .carrinho-preco {
-    color: #111;
+    color: var(--color-label);
     font-weight: 500;
     font-size: 1rem;
     margin-left: 6px;
@@ -113,9 +128,9 @@
 }
 
 .carrinho-box {
-    background: #fff;
+    background: var(--color-bg);
     border-radius: 18px;
-    box-shadow: none;
+    box-shadow: var(--color-shadow);
     padding: 0 0 0 0;
     display: flex;
     flex-direction: column;
@@ -127,10 +142,10 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.05rem;
-    color: #222;
+    color: var(--color-text-secondary);
     font-weight: 400;
     padding: 18px 0 10px 0;
-    border-bottom: 1px solid #e5e8ef;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .carrinho-resumo-linha:last-child {
@@ -144,7 +159,7 @@
     font-size: 1.18rem;
     font-weight: 700;
     margin: 24px 0 18px 0;
-    color: #111;
+    color: var(--color-label);
     border: none;
     padding: 0;
 }
@@ -152,13 +167,13 @@
 .carrinho-resumo-total {
     font-size: 1.35rem;
     font-weight: 800;
-    color: #111;
+    color: var(--color-label);
 }
 
 .carrinho-btn {
     width: 100%;
-    background: #000;
-    color: #fff;
+    background: var(--color-btn-bg);
+    color: var(--color-bg);
     border: none;
     border-radius: 24px;
     padding: 16px 0;
@@ -171,7 +186,7 @@
     letter-spacing: 0.5px;
 }
 .carrinho-btn:hover {
-    background: #00b3ff;
+    background: var(--color-btn-hover);
 }
 
 @media (max-width: 1000px) {

@@ -1,3 +1,20 @@
+/* Variáveis de cores comuns */
+:root {
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-header-bg: #0a1633;
+    --color-bg: #fff;
+    --color-bg-light: #f6f6f6;
+    --color-shadow: rgba(10,22,51,0.10);
+    --color-shadow-2: rgba(10,22,51,0.04);
+    --color-shadow-focus: #007bff;
+    --color-text: #222;
+    --color-label: #0a1633;
+    --color-link: #007bff;
+    --color-link-hover: #0056b3;
+    --color-border: #e3e8ee;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,9 +32,9 @@ body {
 }
 
 .login-modal-content {
-    background: #fff;
+    background: var(--color-bg);
     border-radius: 18px;
-    box-shadow: 0 8px 32px 0 rgba(10,22,51,0.10), 0 1.5px 4px 0 rgba(10,22,51,0.04);
+    box-shadow: 0 8px 32px 0 var(--color-shadow), 0 1.5px 4px 0 var(--color-shadow-2);
     padding: 36px 32px 32px 32px;
     max-width: 430px;
     width: 100%;
@@ -31,10 +48,10 @@ body {
     position: absolute;
     top: 18px;
     right: 24px;
-    background: #fff;
+    background: var(--color-bg);
     border: none;
     font-size: 1.7rem;
-    color: #222;
+    color: var(--color-text);
     cursor: pointer;
     border-radius: 50%;
     width: 36px;
@@ -56,11 +73,11 @@ body {
 
 .welcome-text {
     font-size: 1.15rem;
-    color: #222;
+    color: var(--color-text);
     font-weight: 500;
 }
 .brand {
-    color: #00b3ff;
+    color: var(--color-primary);
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -73,7 +90,7 @@ body {
     gap: 2px;
 }
 .signup-link .signup {
-    color: #00b3ff;
+    color: var(--color-link);
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -81,7 +98,7 @@ body {
 }
 .signup-link .signup:hover {
     text-decoration: underline;
-    color: #0090cc;
+    color: var(--color-link-hover);
 }
 
 .signin-title {
@@ -104,7 +121,7 @@ body {
     justify-content: center;
     border: none;
     background: #f4f7fd;
-    color: #222;
+    color: var(--color-text);
     font-size: 1rem;
     font-weight: 500;
     border-radius: 10px;
@@ -144,7 +161,7 @@ body {
 
 .input-label {
     font-size: 1rem;
-    color: #222;
+    color: var(--color-label);
     font-weight: 500;
     margin: 12px 0 6px 2px;
 }
@@ -152,9 +169,9 @@ body {
 .input {
     width: 100%;
     padding: 13px 14px;
-    border: 1.5px solid #e3e8ee;
+    border: 1.5px solid var(--color-border);
     border-radius: 8px;
-    background: #f6f6f6;
+    background: var(--color-bg-light);
     font-size: 1rem;
     margin-bottom: 0;
     box-shadow: none;
@@ -162,8 +179,8 @@ body {
     transition: border 0.2s;
 }
 .input:focus {
-    border: 1.5px solid #00b3ff;
-    background: #fff;
+    border: 1.5px solid var(--color-shadow-focus);
+    background: var(--color-bg);
 }
 
 .forgot-row {
@@ -172,21 +189,21 @@ body {
     margin: 6px 2px 18px 0;
 }
 .forgot-link {
-    color: #00b3ff;
+    color: var(--color-link);
     text-decoration: none;
     font-size: 0.98rem;
     font-weight: 500;
     transition: color 0.2s;
 }
 .forgot-link:hover {
-    color: #0090cc;
+    color: var(--color-link-hover);
     text-decoration: underline;
 }
 
 .signin-btn {
     width: 100%;
     background: #21a2fa;
-    color: #fff;
+    color: var(--color-bg);
     border: none;
     border-radius: 8px;
     padding: 13px 0;
@@ -198,7 +215,7 @@ body {
     transition: background 0.2s;
 }
 .signin-btn:hover {
-    background: #0090cc;
+    background: var(--color-primary-dark);
 }
 
 @media (max-width: 600px) {
