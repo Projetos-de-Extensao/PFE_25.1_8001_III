@@ -1,23 +1,79 @@
-import { useState } from 'react'
-import './App.css'
-import './componentes/Cadastro/cadastro.css'
-import './componentes/Banner/banner.css'
-import './componentes/Header/header.css'
-import './componentes/Footer/footer.css'
-import './componentes/List/List.css'
-import './componentes/Category/Category.css'
-import Banner from './componentes/Banner/Banner'
-import Cadastro from './componentes/Cadastro/Cadastro'
-import Header from './componentes/Header/Header'
-import Footer from './componentes/Footer/Footer'
-import List from './componentes/List/List'
-import Category from './componentes/Category' 
+import React from "react";
 
+function Pesquisa() {
+  return (
+    <section className="top-picks">
+      <div className="container">
+        <div className="top-picks-filter">
+          <h2>Principais eventos Perto de Você</h2>
+          <button className="btn btn-outline">
+            <img src="src/filter.png" alt="" /> Filtrar
+          </button>
+        </div>
+        <hr />
+        <div className="event-list">
+          <div className="event">
+            <img src="src/Rectangle 1363.png" alt="" />
+            <div className="event-details">
+              <p>13 de Ago</p>
+              <p>Dom - 10:00 AM</p>
+              <p>Elements Music and Arts Festival - Domingo</p>
+            </div>
+            <div className="event-actions">
+              <div className="btn-picks">
+                <button className="btn btn-outline">Ver Detalhes</button>
+                <button className="btn">Reservar Agora</button>
+              </div>
+            </div>
+          </div>
+          <div className="event">
+            <img src="src/Rectangle 1363-1.png" alt="" />
+            <div className="event-details">
+              <p>13 de Ago</p>
+              <p>Dom - 10:00 AM</p>
+              <p>Elements Music and Arts Festival - Domingo</p>
+            </div>
+            <div className="event-actions">
+              <div className="btn-picks">
+                <button className="btn btn-outline">Ver Detalhes</button>
+                <button className="btn">Reservar Agora</button>
+              </div>
+            </div>
+          </div>
+          <div className="event">
+            <img src="src/Rectangle 1363-2.png" alt="" />
+            <div className="event-details">
+              <p>13 de Ago</p>
+              <p>Dom - 10:00 AM</p>
+              <p>Elements Music and Arts Festival - Domingo</p>
+            </div>
+            <div className="event-actions">
+              <div className="btn-picks">
+                <button className="btn btn-outline">Ver Detalhes</button>
+                <button className="btn">Reservar Agora</button>
+              </div>
+            </div>
+          </div>
+          <div className="event">
+            <img src="src/Rectangle 1361-3.png" alt="" />
+            <div className="event-details">
+              <p>13 de Ago</p>
+              <p>Dom - 10:00 AM</p>
+              <p>Elements Music and Arts Festival - Domingo</p>
+            </div>
+            <div className="event-actions">
+              <div className="btn-picks">
+                <button className="btn btn-outline">Ver Detalhes</button>
+                <button className="btn">Reservar Agora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="src/fundo_branco_degrade.png" alt="" />
+        <button className="btn btn-outline show-more-btn">Mostrar Mais</button>
+      </div>
+    </section>
+  );
+}
 
-
-<Header/>
-    
-
-<List/>
-
-<Footer/>
+export default Pesquisa;
