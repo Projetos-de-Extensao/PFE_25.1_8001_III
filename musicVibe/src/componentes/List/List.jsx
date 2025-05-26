@@ -1,0 +1,68 @@
+import React from "react";
+import "./list.css"; // Importe seu CSS se necessário
+
+const events = [
+    {
+        img: "src/Rectangle 1363.png",
+        date: "13 de Ago",
+        time: "Dom - 10:00 AM",
+        title: "Elements Music and Arts Festival - Domingo",
+    },
+    {
+        img: "src/Rectangle 1363-1.png",
+        date: "13 de Ago",
+        time: "Dom - 10:00 AM",
+        title: "Elements Music and Arts Festival - Domingo",
+    },
+    {
+        img: "src/Rectangle 1363-2.png",
+        date: "13 de Ago",
+        time: "Dom - 10:00 AM",
+        title: "Elements Music and Arts Festival - Domingo",
+    },
+    {
+        img: "src/Rectangle 1361-3.png",
+        date: "13 de Ago",
+        time: "Dom - 10:00 AM",
+        title: "Elements Music and Arts Festival - Domingo",
+    },
+];
+
+const List = () => (
+    <section className="top-picks">
+        <div className="container">
+            <div className="top-picks-filter">
+                <h2>Principais eventos Perto de Você</h2>
+                <button className="btn btn-outline">
+                    <img src="src/filter.png" alt="" /> Filtrar
+                </button>
+            </div>
+            <hr />
+            <div className="event-list">
+                {events.map((event, idx) => (
+                    <div className="event" key={idx}>
+                        <img src={event.img} alt="" />
+                        <div className="event-details">
+                            <p>{event.date}</p>
+                            <p>{event.time}</p>
+                            <p>{event.title}</p>
+                        </div>
+                        <div className="event-actions">
+                            <div className="btn-picks">
+                                <button className="btn btn-outline">Ver Detalhes</button>
+                                <button className="btn">Reservar Agora</button>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+                <div className="white-background">
+                    <button className="btn btn-outline show-more-btn white-background-bottom">
+                        Mostrar Mais
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+export default List;
