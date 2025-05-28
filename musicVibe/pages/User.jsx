@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./user.css";
+import { useNavigate } from "react-router-dom";
 
 const initialUser = {
   fullName: "João da Silva",
@@ -19,6 +20,12 @@ export default function UserProfile() {
   const [showCard, setShowCard] = useState(false);
   const [form, setForm] = useState(user);
   const [errors, setErrors] = useState({});
+  const [users, setUsers] = useState([]);
+  const [eventos, setEventos] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [msg, setMsg] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleEdit = () => {
     setForm(user);
@@ -55,6 +62,47 @@ export default function UserProfile() {
     setUser(form);
     setEditMode(false);
   };
+
+  const fetchUsers = async () => {
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/users");
+      if (!res.ok) {
+        const text = await res.text();
+        console.error("Erro detalhado do backend (users):", text); // <-- debug
+        throw new Error("Erro ao buscar usuários.");
+      }
+      const data = await res.json();
+      setUsers(data);
+      setMsg("");
+    } catch (err) {
+      setError("Erro ao buscar usuários.");
+      console.error("Erro de conexão ou JS (users):", err); // <-- debug
+    }
+    setLoading(false);
+  };
+
+  const fetchEventos = async () => {
+    try {
+      const res = await fetch("/eventos");
+      if (!res.ok) {
+        const text = await res.text();
+        console.error("Erro detalhado do backend (eventos):", text); // <-- debug
+        throw new Error("Erro ao buscar eventos.");
+      }
+      const data = await res.json();
+      setEventos(data);
+    } catch (err) {
+      // erro silencioso, pode adicionar setError se desejar
+      console.error("Erro de conexão ou JS (eventos):", err); // <-- debug
+    }
+  };
+
+  useEffect(() => {
+    fetchUsers();
+    fetchEventos();
+  }, []);
 
   return (
     <div className="user-profile-container">
@@ -152,6 +200,71 @@ export default function UserProfile() {
           )}
         </div>
       </form>
+      <div style={{ marginTop: 24, textAlign: "center" }}>
+        <button
+          type="button"
+          className="edit-btn"
+          onClick={() => navigate("/CadastroEvent")}
+        >
+          Ir para Cadastro de Evento
+        </button>
+      </div>
+      <h2 style={{ marginTop: 48 }}>Usuários Cadastrados</h2>
+      {loading && <div>Carregando...</div>}
+      {error && <div style={{ color: "red" }}>{error}</div>}
+      {msg && <div style={{ color: "green" }}>{msg}</div>}
+      <table style={{ width: "100%", marginTop: 16, borderCollapse: "collapse" }}>
+        <thead>
+          <tr>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Nome</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>E-mail</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Data Nascimento</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Estado</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Cidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((u, i) => (
+            <tr key={i}>
+              <td>{u.nome}</td>
+              <td>{u.email}</td>
+              <td>{u.dataNascimento}</td>
+              <td>{u.estado}</td>
+              <td>{u.cidade}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {/* Nova seção de eventos cadastrados */}
+      <h2 style={{ marginTop: 48 }}>Eventos Cadastrados</h2>
+      <table style={{ width: "100%", marginTop: 16, borderCollapse: "collapse" }}>
+        <thead>
+          <tr>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Nome</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Data</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Hora Início</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Hora Fim</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Cidade</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Estado</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>CEP</th>
+            <th style={{ borderBottom: "1px solid #ccc" }}>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          {eventos.map((ev, i) => (
+            <tr key={i}>
+              <td>{ev.nome}</td>
+              <td>{ev.dataEvento}</td>
+              <td>{ev.horaInicio}</td>
+              <td>{ev.horaFim}</td>
+              <td>{ev.cidade}</td>
+              <td>{ev.estado}</td>
+              <td>{ev.cep}</td>
+              <td>{ev.descricao}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
