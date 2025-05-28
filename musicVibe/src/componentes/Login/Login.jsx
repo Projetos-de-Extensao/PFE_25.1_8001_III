@@ -4,6 +4,7 @@ import "../login.css";
 export default function Login() {
   return (
     <div className="login-modal">
+      <div className="login-modal-overlay"></div>
       <div className="login-modal-content">
         <button className="close-btn" aria-label="Fechar">&times;</button>
         <div className="login-modal-header">
@@ -36,7 +37,7 @@ export default function Login() {
           <div className="forgot-row">
             <a href="#" className="forgot-link">Esqueceu a senha?</a>
           </div>
-          <button type="submit" className="signin-btn">Entrar</button>
+          <button type="submit" className="signin-btn" onClick={("../pages/user")}>Entrar</button>
         </form>
       </div>
     </div>

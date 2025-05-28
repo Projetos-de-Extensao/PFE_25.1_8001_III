@@ -3,25 +3,25 @@ import "./list.css"; // Importe seu CSS se necessário
 
 const events = [
     {
-        img: "src/Rectangle 1363.png",
+        img: "/assets/photos/Rectangle 1363.png",
         date: "13 de Ago",
         time: "Dom - 10:00 AM",
         title: "Elements Music and Arts Festival - Domingo",
     },
     {
-        img: "src/Rectangle 1363-1.png",
+        img: "/assets/photos/Rectangle 1363-1.png",
         date: "13 de Ago",
         time: "Dom - 10:00 AM",
         title: "Elements Music and Arts Festival - Domingo",
     },
     {
-        img: "src/Rectangle 1363-2.png",
+        img: "/assets/photos/Rectangle 1363-2.png",
         date: "13 de Ago",
         time: "Dom - 10:00 AM",
         title: "Elements Music and Arts Festival - Domingo",
     },
     {
-        img: "src/Rectangle 1361-3.png",
+        img: "/assets/photos/Rectangle 1361-3.png",
         date: "13 de Ago",
         time: "Dom - 10:00 AM",
         title: "Elements Music and Arts Festival - Domingo",
@@ -31,17 +31,13 @@ const events = [
 const List = () => (
     <section className="top-picks">
         <div className="container">
-            <div className="top-picks-filter">
-                <h2>Principais eventos Perto de Você</h2>
-                <button className="btn btn-outline">
-                    <img src="src/filter.png" alt="" /> Filtrar
-                </button>
-            </div>
-            <hr />
             <div className="event-list">
                 {events.map((event, idx) => (
                     <div className="event" key={idx}>
-                        <img src={event.img} alt="" />
+                        <img 
+                            src={event.img} 
+                            alt={`Banner colorido de festival de música e artes chamado Elements Music and Arts Festival - Domingo, data 13 de Ago, horário Dom - 10:00 AM. Ambiente digital de lista de eventos, tom animado e festivo.`} 
+                        />
                         <div className="event-details">
                             <p>{event.date}</p>
                             <p>{event.time}</p>
