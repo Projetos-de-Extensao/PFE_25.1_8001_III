@@ -1,0 +1,224 @@
+/* Variáveis de cores comuns */
+:root {
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-bg: #fff;
+    --color-bg-light: #f6f6f6;
+    --color-shadow: none;
+    --color-text: #111;
+    --color-text-secondary: #222;
+    --color-label: #111;
+    --color-border: #e5e8ef;
+    --color-btn-bg: #000;
+    --color-btn-hover: #007bff;
+}
+
+/* Carrinho */
+.carrinho-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 48px auto 0 auto;
+    padding: 0 24px;
+    gap: 80px;
+    background: var(--color-bg);
+}
+/* Carrinho, Lista */
+.carrinho-lista {
+    flex: 2;
+}
+
+.carrinho-titulo {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--color-text);
+    letter-spacing: -0.5px;
+}
+
+.carrinho-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 38px;
+    background: none;
+    border-radius: 0;
+    box-shadow: var(--color-shadow);
+    padding: 0;
+    transition: none;
+}
+
+.carrinho-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: none;
+    background: var(--color-bg-light);
+}
+
+.carrinho-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.carrinho-data {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 2px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.carrinho-nome {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: var(--color-label);
+    margin-bottom: 2px;
+    line-height: 1.2;
+    font-family: 'Inter', Arial, sans-serif;
+}
+.carrinho-local {
+    font-weight: 400;
+    color: var(--color-label);
+    font-size: 1.08rem;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.carrinho-pagamento {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-size: 1.01rem;
+    margin-top: 4px;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.carrinho-parcelamento {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 6px;
+}
+
+.carrinho-preco {
+    color: var(--color-label);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.carrinho-lock {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+.carrinho-resumo {
+    flex: 1;
+    min-width: 320px;
+    max-width: 370px;
+}
+
+/* Carrinho, Resumo */
+.carrinho-box {
+    background: var(--color-bg);
+    border-radius: 18px;
+    box-shadow: var(--color-shadow);
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: none;
+}
+
+.carrinho-resumo-linha {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    padding: 18px 0 10px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.carrinho-resumo-linha:last-child {
+    border-bottom: none;
+}
+
+.carrinho-resumo-subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.18rem;
+    font-weight: 700;
+    margin: 24px 0 18px 0;
+    color: var(--color-label);
+    border: none;
+    padding: 0;
+}
+
+.carrinho-resumo-total {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--color-label);
+}
+
+.carrinho-btn {
+    width: 100%;
+    background: var(--color-btn-bg);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 24px;
+    padding: 16px 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin-top: 0;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: none;
+    letter-spacing: 0.5px;
+}
+.carrinho-btn:hover {
+    background: var(--color-btn-hover);
+}
+
+@media (max-width: 1000px) {
+    .carrinho-main {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .carrinho-resumo {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .carrinho-main {
+        padding: 0 4px;
+        gap: 16px;
+    }
+    .carrinho-box {
+        padding: 0;
+    }
+    .carrinho-img {
+        width: 60px;
+        height: 60px;
+    }
+    .carrinho-item {
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+    .carrinho-titulo {
+        font-size: 1.05rem;
+    }
+}
