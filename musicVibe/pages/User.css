@@ -36,7 +36,7 @@
   width: 100%;
   padding: 12px 14px;
   border: 1.5px solid #cfd8dc;
-  border-radius: 8px;
+  border-radius: 30px; /* alterado para mais arredondado */
   font-size: 1.05rem;
   transition: border 0.2s;
   background: #fafdff;
@@ -75,7 +75,7 @@
   border: none;
   color: #1976d2;
   padding: 7px 16px;
-  border-radius: 6px;
+  border-radius: 20px; /* alterado para mais arredondado */
   cursor: pointer;
   font-size: 0.97em;
   font-weight: 500;
@@ -99,7 +99,7 @@
 .cancel-btn {
   padding: 10px 22px;
   border: none;
-  border-radius: 8px;
+  border-radius: 20px; /* alterado para mais arredondado */
   font-size: 1em;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;

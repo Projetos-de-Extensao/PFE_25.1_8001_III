@@ -50,46 +50,19 @@ function Sobre() {
           <h2>Equipe</h2>
           <div style={{ display: "flex", gap: 32, flexWrap: "wrap", alignItems: "center" }}>
             <div style={{ textAlign: "center" }}>
-              <img src="/src/equipe/joao.jpg" alt="João Silva" style={{ width: 100, borderRadius: "50%" }} />
               <p><b>João Silva</b><br />Fundador & Curador</p>
             </div>
             <div style={{ textAlign: "center" }}>
-              <img src="/src/equipe/ana.jpg" alt="Ana Souza" style={{ width: 100, borderRadius: "50%" }} />
               <p><b>Ana Souza</b><br />Produtora Executiva</p>
             </div>
             <div style={{ textAlign: "center" }}>
-              <img src="/src/equipe/rafael.jpg" alt="Rafael Lima" style={{ width: 100, borderRadius: "50%" }} />
               <p><b>Rafael Lima</b><br />Diretor Artístico</p>
             </div>
           </div>
         </section>
 
-        <section className="sobre-section container">
-          <h2>Imagens & Vídeos</h2>
-          <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-            <img src="src/assets/photos/fotos/evento1.jpg" alt="Evento 1" style={{ width: 180, borderRadius: 8 }} />
-            <img src="src/assets/photos/evento2.jpg" alt="Evento 2" style={{ width: 180, borderRadius: 8 }} />
-            <img src="src/assets/photos/evento3.jpg" alt="Evento 3" style={{ width: 180, borderRadius: 8 }} />
-          </div>
-        </section>
 
-        <section className="sobre-section container">
-          <h2>Reconhecimento e Parcerias</h2>
-          <ul>
-            <li>Matéria na <b>Revista Música Brasil</b>: “O festival que está mudando a cena musical.”</li>
-            <li>Patrocínio: <img src="src/assets/photos/logoPatrocinador1.png" alt="Patrocinador 1" style={{ height: 32, verticalAlign: "middle" }} /> <img src="/src/parceiros/logoPatrocinador2.png" alt="Patrocinador 2" style={{ height: 32, verticalAlign: "middle" }} /></li>
-            <li>Depoimento: <i>“Nunca vivi uma vibe tão boa!”</i> – <b>MC Flow</b></li>
-          </ul>
-        </section>
-
-        <section className="sobre-section container" style={{ textAlign: "center", marginTop: 40 }}>
-          <h2>Junte-se à nossa comunidade!</h2>
-          <p>
-            <a href="mailto:suporte@musicvibe.com" className="btn" style={{ margin: 8 }}>Contato</a>
-            <a href="https://instagram.com/musicvibe" className="btn btn-outline" style={{ margin: 8 }}>Instagram</a>
-            <a href="/ingressos" className="btn btn-outline" style={{ margin: 8 }}>Próximos Eventos</a>
-          </p>
-        </section>
+     
       </main>
     </>
   );
