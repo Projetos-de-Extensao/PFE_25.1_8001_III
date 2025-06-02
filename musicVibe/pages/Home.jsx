@@ -1,11 +1,93 @@
-import React from "react";
-
+import React, { useRef, useState } from "react";
+import "./styles.css";
+import List from "../src/componentes/List/List.jsx";
+import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
 
 function Home() {
+  // Fotos do hero (adicione mais se quiser)
+  const heroImages = [
+    { src: "src/assets/photos/Rectangle 5.png", alt: "homem com microfone" },
+    // { src: "src/assets/photos/OutraImagem.png", alt: "Outra imagem" },
+  ];
+  const [heroIndex, setHeroIndex] = useState(0);
+  const heroRef = useRef(null);
+
+  const scrollHeroLeft = () => {
+    setHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1));
+  };
+
+  const scrollHeroRight = () => {
+    setHeroIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1));
+  };
+
+  // Mostra todas as categorias, mas permite rolar para os lados
+  const categories = [
+    { img: "src/assets/photos/Rectangle 1361.png", label: "Show" },
+    { img: "src/assets/photos/Rectangle 1361-1.png", label: "Rock" },
+    { img: "src/assets/photos/Rectangle 1361-2.png", label: "Pop" },
+    { img: "src/assets/photos/Rectangle 1361-3.png", label: "Eletrônica" },
+  ];
+
+  const listRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (listRef.current) {
+      listRef.current.scrollBy({ left: -200, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (listRef.current) {
+      listRef.current.scrollBy({ left: 200, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
+      <section className="hero">
+        <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className="hero-content">
+            <h1>Encontre sua vibe musical!!</h1>
+            <button className="btn">Reserve Agora</button>
+          </div>
+          <div style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
+            <img
+              src={heroImages[heroIndex].src}
+              alt={heroImages[heroIndex].alt}
+              className="hero-image"
+              ref={heroRef}
+              style={{ width: "100%", display: "block" }}
+            />
+            <button
+              className="arrow hero-arrow hero-arrow-left"
+              onClick={scrollHeroLeft}
+              style={{
+                position: "absolute",
+                left: "24px",
+                top: "50%",
+                transform: "translateY(-50%)",
+                zIndex: 2,
+              }}
+            >
+              <img src="src/assets/icons/setaEsquerda.svg" alt="Anterior" />
+            </button>
+            <button
+              className="arrow hero-arrow hero-arrow-right"
+              onClick={scrollHeroRight}
+              style={{
+                position: "absolute",
+                right: "24px",
+                top: "50%",
+                transform: "translateY(-50%)",
+                zIndex: 2,
+              }}
+            >
+              <img src="src/assets/icons/setaDireita.svg" alt="Próxima" />
+            </button>
+          </div>
+        </div>
+      </section>
 
-      
       <section className="categories">
         <div className="container">
           <div className="categories-header">
@@ -13,25 +95,33 @@ function Home() {
             <button className="btn btn-outline">Ver Mais</button>
           </div>
           <hr />
-          <div className="category-list">
-            <button className="arrow"><img src="/src/setaEsquerda.svg" alt="Seta Esquerda" /></button>
-            <div className="category">
-              <img src="/src/Rectangle 1361.png" alt="Show" />
-              <p>Show</p>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <button className="arrow" onClick={scrollLeft}>
+              <img src="src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
+            </button>
+            <div
+              className="category-list"
+              ref={listRef}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.9375rem",
+                overflowX: "auto",
+                scrollBehavior: "smooth",
+                padding: "0.625rem 0",
+                scrollbarWidth: "none"
+              }}
+            >
+              {categories.map((cat, idx) => (
+                <div className="category" key={cat.label + idx}>
+                  <img src={cat.img} alt={cat.label} />
+                  <p>{cat.label}</p>
+                </div>
+              ))}
             </div>
-            <div className="category">
-              <img src="/src/Rectangle 1361-1.png" alt="Rock" />
-              <p>Rock</p>
-            </div>
-            <div className="category">
-              <img src="/src/Rectangle 1361-2.png" alt="Pop" />
-              <p>Pop</p>
-            </div>
-            <div className="category">
-              <img src="/src/Rectangle 1361-3.png" alt="Eletrônica" />
-              <p>Eletrônica</p>
-            </div>
-            <button className="arrow"><img src="/src/setaDireita.svg" alt="Seta Direita" /></button>
+            <button className="arrow" onClick={scrollRight}>
+              <img src="src/assets/icons/setaDireita.svg" alt="Seta Direita" />
+            </button>
           </div>
         </div>
       </section>
@@ -40,35 +130,17 @@ function Home() {
         <div className="container">
           <div className="top-picks-filter">
             <h2>Principais eventos Perto de Você</h2>
-            <button className="btn btn-outline"><img src="/src/filter.png" alt="" /> Filtrar</button>
+            <button className="btn btn-outline">
+              <img src="/src/filter.png" alt="" /> Filtrar
+            </button>
           </div>
           <hr />
-          <div className="event-list">
-            {[1, 2, 3, 4].map((_, i) => (
-              <div className="event" key={i}>
-                <img src={`/src/Rectangle 1363${i === 0 ? "" : i === 3 ? "-1-3" : `-${i}`}.png`} alt="" />
-                <div className="event-details">
-                  <p>13 de Ago</p>
-                  <p>Dom - 10:00 AM</p>
-                  <p>Elements Music and Arts Festival - Domingo</p>
-                </div>
-                <div className="event-actions">
-                  <div className="btn-picks">
-                    <button className="btn btn-outline">Ver Detalhes</button>
-                    <button className="btn">Reservar Agora</button>
-                  </div>
-                </div>
-              </div>
-            ))}
-            <div className="white-background">
-              <button className="btn btn-outline show-more-btn white-background-bottom">Mostrar Mais</button>
-            </div>
-          </div>
+          <List/>
+          <WhiteBoard />
         </div>
       </section>
-
     </>
-  )
-};
+  );
+}
 
 export default Home;
