@@ -4,9 +4,15 @@ import "./Header.css";
 
 const categorias = [
   { value: "", label: "Categoria" },
+<<<<<<< HEAD
+  { value: "Classic", label: "Clássico" },
+  { value: "Rock", label: "Rock" },
+  { value: "Eletronic", label: "Eletrônica" },
+=======
   { value: "Classic", label: "Classic" },
   { value: "Rock", label: "Rock" },
   { value: "Eletrônica", label: "Eletrônica" },
+>>>>>>> main
   { value: "Pop", label: "Pop" },
 ];
 
@@ -72,6 +78,10 @@ function Header({ onSearch })  {
                         name="category"
                         value={filters.category}
                         onChange={handleChange}
+<<<<<<< HEAD
+                        className="category-select"
+=======
+>>>>>>> main
                     >
                         {categorias.map(opt => (
                           <option key={opt.value} value={opt.value}>{opt.label}</option>

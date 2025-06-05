@@ -19,14 +19,14 @@ export default function Login() {
         <h2 className="signin-title">Entrar</h2>
         <div className="social-row">
           <button className="social-btn google">
-            <img src="/src/google.svg" alt="Google" className="icon" />
+            <img src="../../src/assets/icons/google.svg" alt="Google" className="icon" />
             <span>Entrar com Google</span>
           </button>
           <button className="social-btn icon-btn" aria-label="Entrar com Facebook">
-            <img src="/src/facebook.svg" alt="Facebook" className="icon" />
+            <img src="../../src/assets/icons/" alt="Facebook" className="icon" />
           </button>
           <button className="social-btn icon-btn" aria-label="Entrar com Apple">
-            <img src="/src/apple.svg" alt="Apple" className="icon" />
+            <img src="../../src/assets/icons/apple.svg" alt="Apple" className="icon" />
           </button>
         </div>
         <form className="login-form">

@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+import "./Event.css";
+=======
+>>>>>>> main
 
 export default function Event() {
   return (
@@ -9,7 +13,11 @@ export default function Event() {
             className="event__background-image"
             style={{
               backgroundImage:
+<<<<<<< HEAD
+                "linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('../src/assets/photos/sinfonia2')",
+=======
                 "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('src/sinfonia2.png')",
+>>>>>>> main
             }}
           ></div>
         </div>
@@ -37,7 +45,11 @@ export default function Event() {
           <div className="floated-image">
             <img
               className="event-image"
+<<<<<<< HEAD
+              src="../src/assets/photos/sinfonia1.png"
+=======
               src="src/sinfonia1.png"
+>>>>>>> main
               alt="Sinfonia no Teatro"
             />
             <button className="btn main-banner-btn">Comprar Ingresso</button>
@@ -111,7 +123,18 @@ export default function Event() {
           </p>
         </div>
         <div className="event-map">
+<<<<<<< HEAD
+                 <div id="mapBox" class="mapBox" 
+                    data-lat="40.701083" 
+                    data-lon="-74.1522848" 
+                    data-zoom="13" 
+                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+                    data-mlat="40.701083"
+                    data-mlon="-74.1522848">
+                </div>
+=======
           <img src="src/mapa-exemplo.png" alt="Mapa do local" />
+>>>>>>> main
         </div>
         <div className="summary summary-bottom">
           <div className="range-tickets">

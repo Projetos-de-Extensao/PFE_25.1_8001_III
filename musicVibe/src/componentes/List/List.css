@@ -1,5 +1,5 @@
 .top-picks {
-    padding: 40px 20px;
+    padding: 40px 0px;
     background-color: var(--color-bg);
 }
 
@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.25rem;
 }
 
 .top-picks-header h2 {
@@ -21,7 +20,6 @@
     align-items: center;
     gap: 0.625rem;
     font-size: 0.9rem;
-    padding: 0.5rem 0.9375rem;
     border-radius: 1.25rem;
     background-color: var(--color-primary);
     color: var(--color-bg-white);
@@ -43,7 +41,6 @@
 .event-list {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
 }
 
 .event {
@@ -58,15 +55,15 @@
 }
 
 .event img {
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 120px;
+    height: 120px;
     border-radius: 0.625rem;
     object-fit: cover;
+    margin-right: 1rem
 }
 
 .event-details {
     flex: 1;
-    margin-left: 0.9375rem;
 }
 
 .event-details .event-date {
@@ -84,20 +81,21 @@
     font-size: 1rem;
     font-weight: bold;
     color: var(--color-text);
-    margin-top: 0.3125rem;
 }
 
 .event-actions {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+<<<<<<< HEAD
+=======
     margin-left: 30px;
+>>>>>>> main
     min-width: 120px;
 }
 
 .event-actions .btn {
     font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
     border-radius: 3.125rem;
 }
 
@@ -114,9 +112,7 @@
 
 .show-more-btn {
     display: block;
-    margin: 1.25rem auto 0;
     font-size: 0.9rem;
-    padding: 0.625rem 1.25rem;
     border-radius: 1.25rem;
     background-color: transparent;
     color: var(--color-primary);

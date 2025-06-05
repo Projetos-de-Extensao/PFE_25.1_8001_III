@@ -9,10 +9,17 @@ function Footer() {
                 <div className="footer-columns">
                     <div className="social">
                         <a href="https://instagram.com/musicvibe" target="_blank" rel="noopener noreferrer">
+<<<<<<< HEAD
+                            <img src="../../../src/assets/icons/logoInstragram.png" alt="Instagram" />
+                        </a>
+                        <a href="https://facebook.com/musicvibe" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../src/assets/icons/logoFacebook.png" alt="Facebook" />
+=======
                             <img src="../../assets/icons/logoInstragram.png" alt="Instagram" />
                         </a>
                         <a href="https://facebook.com/musicvibe" target="_blank" rel="noopener noreferrer">
                             <img src="../../assets/icons/logoFacebook.png" alt="Facebook" />
+>>>>>>> main
                         </a>
                     </div>
                     <div className="links">
@@ -22,11 +29,19 @@ function Footer() {
                         <a href="#" onClick={() => navigate('/cadastro-evento')}>Categorias</a>
                     </div>
                     <div className="contact">
+<<<<<<< HEAD
+                        <p><img src="../../../src/assets/icons/email.svg" alt="Email" /> suporte@musicvibe.com</p>
+                        <p><img src="../../../src/assets/icons/Icon-awesome-phone-alt.svg" alt="Telefone" /> +21 123 456</p>
+                        <p><img src="../../../src/assets/icons/Icon-calendar.svg" alt="Dias de Funcionamento" /> Segunda - Domingo</p>
+                        <p><img src="../../../src/assets/icons/Icon-feather-clock.svg" alt="Horário" /> 8:00 AM - 10:00 PM (BRT)</p>
+                        <p><img src="../../../src/assets/icons/map-pin.svg" alt="Endereço" /> Brasil</p>
+=======
                         <p><img src="../../../assets/icons/email.svg" alt="Email" /> suporte@musicvibe.com</p>
                         <p><img src="/assets/icons/Icon-awesome-phone-alt.svg" alt="Telefone" /> +21 123 456</p>
                         <p><img src="/assets/icons/Icon-calendar.svg" alt="Dias de Funcionamento" /> Segunda - Domingo</p>
                         <p><img src="/assets/icons/Icon-feather-clock.svg" alt="Horário" /> 8:00 AM - 10:00 PM (BRT)</p>
                         <p><img src="/assets/icons/map-pin.svg" alt="Endereço" /> Brasil</p>
+>>>>>>> main
                     </div>
                 </div>
                 <div className="footer-bottom">
