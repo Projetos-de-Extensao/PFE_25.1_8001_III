@@ -82,47 +82,64 @@ export default function Cadastro({ onUserAdded }) {
   return (
     <section className="cadastro-section">
       <form className="cadastro-form" onSubmit={handleSubmit} autoComplete="off">
+
         <h2 className="cadastro-title">Primeiro Pequeno Passo</h2>
+
         <div className="form-row">
           <label htmlFor="nome" className="label-azul">Nome</label>
           <input type="text" name="nome" id="nome" placeholder="Digite o nome da clínica" value={form.nome} onChange={handleChange} className="input-full" />
         </div>
+
         <div className="form-row double">
           <div className="form-col">
             <label htmlFor="cpfcnpj" className="label-azul">CPF/CNPJ</label>
             <input type="text" name="cpfcnpj" id="cpfcnpj" placeholder="Digite o CPF/CNPJ" value={form.cpfcnpj} onChange={handleChange} className="input-full" />
           </div>
+
           <div className="form-col">
             <label htmlFor="estado" className="label-azul">Estado</label>
             <input type="text" name="estado" id="estado" placeholder="Digite o CPF/CNPJ" value={form.estado} onChange={handleChange} className="input-full" />
           </div>
         </div>
+
         <div className="form-row double">
           <div className="form-col">
             <label htmlFor="dataNascimento" className="label-azul">Data de nascimento/criação</label>
             <input type="date" name="dataNascimento" id="dataNascimento" placeholder="Selecione a data" value={form.dataNascimento} onChange={handleChange} className="input-full" />
           </div>
+
           <div className="form-col">
             <label htmlFor="cidade" className="label-azul">Cidade</label>
             <input type="text" name="cidade" id="cidade" placeholder="Selecione sua uf" value={form.cidade} onChange={handleChange} className="input-full" />
           </div>
         </div>
+
         <div className="form-row">
           <label htmlFor="email" className="label-azul">Email</label>
           <input type="email" name="email" id="email" placeholder="Insira o endereço de e-mail para login" value={form.email} onChange={handleChange} className="input-full" />
         </div>
+
         <div className="form-row">
           <label htmlFor="senha" className="label-azul">Crie uma senha</label>
           <input type="password" name="senha" id="senha" placeholder="Digite sua senha" value={form.senha} onChange={handleChange} className="input-full" />
         </div>
+
         <div className="form-row">
           <label htmlFor="senha2" className="label-azul">Repita a senha</label>
           <input type="password" name="senha2" id="senha2" placeholder="Repita a senha anterior" value={form.senha2} onChange={handleChange} className="input-full" />
         </div>
+
+        <div class="form-img">
+            <label htmlFor="file" className="label-azul" >Coloque uma imagem de prefil:</label>
+            <input type="file" id="file" name="file" accept="image/*"></input>
+        </div>
+
         <div className="form-row center">
           <button type="submit" className="btn-avancar" disabled={loading}>
             {loading ? "Cadastrando..." : "Avançar"}
           </button>
+
+
         </div>
         {msg && <div style={{ color: "green", marginTop: 8 }}>{msg}</div>}
         {error && <div style={{ color: "red", marginTop: 8 }}>{error}</div>}
