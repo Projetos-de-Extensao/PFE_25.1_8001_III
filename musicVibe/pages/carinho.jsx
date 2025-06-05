@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 function Carinho() {
   return (
@@ -6,7 +7,7 @@ function Carinho() {
       <section className="carrinho-lista">
         <h2 className="carrinho-titulo">Tickets</h2>
         <div className="carrinho-item">
-          <img src="src/evento1.jpg" alt="Event 1" className="carrinho-img" />
+          <img src="src/assets/photos/evento1.jpg" alt="Event 1" className="carrinho-img" />
           <div className="carrinho-info">
             <div className="carrinho-data">Aug 13<br />Sun • 10:00am</div>
             <div className="carrinho-nome">
@@ -15,12 +16,12 @@ function Carinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pay in up to 12x</span>
               <span className="carrinho-preco">$99.00</span>
-              <img src="src/lock.svg" alt="Lock" className="carrinho-lock" />
+              <img src="src/assets/icons/lock.svg" alt="Lock" className="carrinho-lock" />
             </div>
           </div>
         </div>
         <div className="carrinho-item">
-          <img src="src/evento2.jpg" alt="Event 2" className="carrinho-img" />
+          <img src="src/assets/photos/evento2.jpg" alt="Event 2" className="carrinho-img" />
           <div className="carrinho-info">
             <div className="carrinho-data">Aug 13<br />Sun • 11:00am</div>
             <div className="carrinho-nome">
@@ -29,12 +30,12 @@ function Carinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pay in up to 12x</span>
               <span className="carrinho-preco">$99.00</span>
-              <img src="src/lock.svg" alt="Lock" className="carrinho-lock" />
+              <img src="src/assets/icons/lock.svg" alt="Lock" className="carrinho-lock" />
             </div>
           </div>
         </div>
         <div className="carrinho-item">
-          <img src="src/evento3.jpg" alt="Event 3" className="carrinho-img" />
+          <img src="src/assets/photos/evento3.jpg" alt="Event 3" className="carrinho-img" />
           <div className="carrinho-info">
             <div className="carrinho-data">Aug 13<br />Sun • 11:00am</div>
             <div className="carrinho-nome">
@@ -43,12 +44,12 @@ function Carinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pay in up to 12x</span>
               <span className="carrinho-preco">$99.00</span>
-              <img src="src/lock.svg" alt="Lock" className="carrinho-lock" />
+              <img src="src/assets/icons/lock.svg" alt="Lock" className="carrinho-lock" />
             </div>
           </div>
         </div>
         <div className="carrinho-item">
-          <img src="src/evento1.jpg" alt="Event 4" className="carrinho-img" />
+          <img src="src/assets/photos/evento1.jpg" alt="Event 4" className="carrinho-img" />
           <div className="carrinho-info">
             <div className="carrinho-data">Aug 13<br />Sun • 10:00am</div>
             <div className="carrinho-nome">
@@ -57,7 +58,7 @@ function Carinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pay in up to 12x</span>
               <span className="carrinho-preco">$99.00</span>
-              <img src="src/lock.svg" alt="Lock" className="carrinho-lock" />
+              <img src="src/assets/icons/lock.svg" alt="Lock" className="carrinho-lock" />
             </div>
           </div>
         </div>

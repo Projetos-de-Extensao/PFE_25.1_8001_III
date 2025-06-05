@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import React, { useRef, useState } from "react";
 import "./styles.css";
 import List from "../src/componentes/List/List.jsx";
 import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
+=======
+import React from "react";
+import "./styles.css";
+import List from "../src/componentes/List/List.jsx";
+import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
+
+>>>>>>> main
 
 function Home() {
   // Fotos do hero (adicione mais se quiser)
@@ -44,6 +52,7 @@ function Home() {
 
   return (
     <>
+<<<<<<< HEAD
       <section className="hero">
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div className="hero-content">
@@ -88,6 +97,8 @@ function Home() {
         </div>
       </section>
 
+=======
+>>>>>>> main
       <section className="categories">
         <div className="container">
           <div className="categories-header">
@@ -95,6 +106,7 @@ function Home() {
             <button className="btn btn-outline">Ver Mais</button>
           </div>
           <hr />
+<<<<<<< HEAD
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <button className="arrow" onClick={scrollLeft}>
               <img src="src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
@@ -121,6 +133,42 @@ function Home() {
             </div>
             <button className="arrow" onClick={scrollRight}>
               <img src="src/assets/icons/setaDireita.svg" alt="Seta Direita" />
+=======
+          <div className="category-list">
+            <button className="arrow">
+              <img src="src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
+            </button>
+            <div className="category">
+              <img
+                src="src/assets/photos/Rectangle 1361.png"
+                alt="Show"
+              />
+              <p>Show</p>
+            </div>
+            <div className="category">
+              <img
+                src="src/assets/photos/Rectangle 1361-1.png"
+                alt="Rock"
+              />
+              <p>Rock</p>
+            </div>
+            <div className="category">
+              <img src="src/assets/photos/Rectangle 1361-2.png" alt="Pop" />
+              <p>Pop</p>
+            </div>
+            <div className="category">
+              <img
+                src="src/assets/photos/Rectangle 1361-3.png"
+                alt="Eletrônica"
+              />
+              <p>Eletrônica</p>
+            </div>
+            <button className="arrow">
+              <img
+                src="src/assets/icons/setaDireita.svg"
+                alt="Seta Direita"
+              />
+>>>>>>> main
             </button>
           </div>
         </div>

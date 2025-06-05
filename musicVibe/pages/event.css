@@ -2,13 +2,23 @@
 :root {
     --color-primary: #007bff;
     --color-primary-dark: #0056b3;
+<<<<<<< HEAD
     --color-bg: #fff;
+=======
+    --color-header-bg: #04092C;
+    --color-footer-bg: #04092C;
+    --color-bg: #f8f9fa;
+>>>>>>> main
     --color-bg-white: #fff;
     --color-shadow: rgba(0,0,0,0.08);
     --color-shadow-2: rgba(0,0,0,0.10);
     --color-text: #333;
     --color-link: #007bff;
     --color-link-hover: #0056b3;
+<<<<<<< HEAD
+=======
+    --color-footer-bottom: #fff;
+>>>>>>> main
 }
 
 /* General Styles */
@@ -16,15 +26,53 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+=======
+    box-sizing: border-box;
+>>>>>>> main
     background-color: var(--color-bg);
     color: var(--color-text);
 }
 
+<<<<<<< HEAD
+=======
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+>>>>>>> main
 .container-event-page {
     width: 100%;
     background: var(--color-bg);
 }
 
+<<<<<<< HEAD
+=======
+/* Header */
+.header {
+    background-color: var(--color-header-bg);
+    color: var(--color-footer-bottom);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: var(--color-footer-bottom);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-link);
+}
+
+>>>>>>> main
 /* Event Banner */
 .event__banner {
     position: relative;
@@ -32,7 +80,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: var(--color-footer-bottom);
+>>>>>>> main
 }
 
 .event__background-wrapper {
@@ -66,6 +118,13 @@ body {
     max-width: 55%;
 }
 
+<<<<<<< HEAD
+=======
+.banner-info-container {
+    max-width: 50%;
+}
+
+>>>>>>> main
 .floated-image {
     max-width: 320px;
     display: flex;
@@ -74,12 +133,27 @@ body {
     gap: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+.floated-image {
+    max-width: 40%;
+}
+
+>>>>>>> main
 .event-image {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 16px var(--color-shadow);
 }
 
+<<<<<<< HEAD
+=======
+.event-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+>>>>>>> main
 /* Tickets Section */
 .summary {
     background-color: var(--color-bg-white);
@@ -138,6 +212,13 @@ body {
 
 /* Description Section */
 .description-event {
+<<<<<<< HEAD
+=======
+    background: var(--color-bg-white);
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--color-shadow);
+>>>>>>> main
     margin: 0 auto 2rem auto;
     max-width: 900px;
 }
@@ -193,9 +274,15 @@ body {
 .main-banner-btn {
     margin-top: 1rem;
     width: 100%;
+<<<<<<< HEAD
     background: var(--color-bg-white);
     color: var(--color-primary);
     border: var(--color-primary) 1px solid;
+=======
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    border: none;
+>>>>>>> main
     border-radius: 24px;
     padding: 0.7rem 0;
     font-size: 1rem;
@@ -253,8 +340,18 @@ body {
     }
 }
 
+<<<<<<< HEAD
 .mapBox {
   height: 420px;
   margin-bottom: 80px;
 }
 
+=======
+/* Footer */
+.footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-bottom);
+    text-align: center;
+    padding: 1rem 0;
+}
+>>>>>>> main
