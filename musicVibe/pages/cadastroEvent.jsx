@@ -166,11 +166,18 @@ export default function CadastroEvent({ onEventAdded }) {
             style={{ minHeight: 220 }}
           />
         </div>
+
+        <div class="form-img">
+            <label htmlfor="file" classeName="label-azul">Coloque a imagem do evento:</label>
+            <input type="file" id="file" name="file" accept="image/*"></input>
+        </div>
+
         <div className="form-row center">
           <button type="submit" className="btn-avancar" disabled={loading}>
             {loading ? "Cadastrando..." : "Avançar"}
           </button>
         </div>
+        
         {msg && <div style={{ color: "green", marginTop: 8 }}>{msg}</div>}
         {error && <div style={{ color: "red", marginTop: 8 }}>{error}</div>}
       </form>
