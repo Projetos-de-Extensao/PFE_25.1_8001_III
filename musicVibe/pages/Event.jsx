@@ -106,12 +106,6 @@ export default function Event() {
             Horário: Segunda à sábado das 11:00 às 19:00h
           </p>
         </div>
-
-        <div className="event-map">
-          <div id="mapBox" className="mapBox">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235058.73708681372!2d-43.51784249259719!3d-22.994646767201488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd0b908ec9f2b%3A0x97db68933b74396d!2sUnidade%20Ibmec!5e0!3m2!1spt-BR!2sbr!4v1749499327950!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
         
         <div className="summary summary-bottom">
           <div className="range-tickets">
