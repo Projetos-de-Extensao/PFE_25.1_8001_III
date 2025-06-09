@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import List from "../src/componentes/List/List";
 
+// Map of category values to display names
+const categoryDisplayNames = {
+  "Classic": "Clássico",
+  "Rock": "Rock",
+  "Eletronic": "Eletrônica",
+  "Pop": "Pop"
+};
+
 function Pesquisa() {
   const [filters, setFilters] = useState({
     dateRange: "",
@@ -41,7 +49,7 @@ function Pesquisa() {
             )}
             {filters.category && (
               <div className="filter-tag">
-                Categoria: {filters.category}
+                Categoria: {categoryDisplayNames[filters.category] || filters.category}
               </div>
             )}
             {filters.bairro && (

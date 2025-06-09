@@ -1,0 +1,129 @@
+.cadastro-evento-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cadastro-evento-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-evento-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0a0049;
+  font-size: 24px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-row.double {
+  display: flex;
+  gap: 20px;
+}
+
+.form-col {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0a0049;
+  outline: none;
+}
+
+.input-full {
+  width: 100%;
+}
+
+.select-uf,
+.select-cidade {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+.city-hint {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.form-row.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-avancar {
+  background-color: #0a0049;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-avancar:hover {
+  background-color: #08005e;
+}
+
+/* Add datalist dropdown styling */
+input[list="cidades-list"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[list="cidades-list"]:focus {
+  border-color: #0a0049;
+  outline: none;
+}
+
+/* Optional - add some spacing for the bairro field */
+#bairro {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .form-row.double {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

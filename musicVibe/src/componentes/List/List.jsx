@@ -15,6 +15,7 @@ function getWeekDay(dateStr) {
 // Mapeia os eventos do JSON para o formato usado na lista
 const allEvents = eventosData.eventos.map(ev => ({
     img: ev.imagen,
+    banner: ev.imagemBanner,
     date: ev.data,
     name: ev.nome,
     title: ev.nome,
@@ -47,7 +48,9 @@ const filterEvents = (filters) => {
         if (filters.dateStart && ev.date < filters.dateStart) return false;
         if (filters.dateEnd && ev.date > filters.dateEnd) return false;
         
-        if (filters.category && ev.categoria !== filters.category) return false;
+        // Check if category filter matches event category
+        if (filters.category && filters.category !== "" && ev.categoria !== filters.category) return false;
+        
         if (filters.name && !ev.name.toLowerCase().includes(filters.name.toLowerCase())) return false;
         if (filters.bairro && filters.bairro !== "" && ev.bairro && !ev.bairro.toLowerCase().includes(filters.bairro.toLowerCase())) return false;
         return true;

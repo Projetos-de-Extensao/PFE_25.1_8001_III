@@ -37,6 +37,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
+    margin-bottom: 80px; /* Added space to prevent overlap */
 }
 
 .event__background-wrapper {
@@ -215,8 +216,10 @@ body {
 .event__section {
     display: flex;
     justify-content: flex-end;
-    margin-top: -60px;
-    margin-bottom: 0;
+    position: relative; /* Changed from negative margin to relative positioning */
+    margin-top: -140px; /* Adjusted to prevent overlap */
+    margin-bottom: 40px; /* Added more space */
+    z-index: 10; /* Ensure it's above other content */
 }
 
 .event-header {
@@ -374,7 +377,6 @@ body {
   text-decoration: underline;
 }
 
-/* Fix potential className issue */
 .mapBox {
   width: 100%;
   height: 400px;
@@ -387,29 +389,68 @@ body {
   font-style: italic;
 }
 
+.event-category-badge {
+  display: inline-block;
+  background-color: #0a0049;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.banner-badge {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  background-color: rgba(10, 0, 73, 0.8);
+  backdrop-filter: blur(3px);
+}
+
+.event-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.event-category {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
 @media (max-width: 900px) {
+    .event__banner {
+        height: auto;
+        min-height: 320px;
+        padding: 40px 0;
+        margin-bottom: 20px; 
+    }
+    
+    .event__section {
+        justify-content: center;
+        margin-top: 20px; 
+        position: static; /* Fixed the invalid character here */
+    }
+    
     .banner-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
+        padding: 20px;
     }
+    
     .floated-image {
         max-width: 100%;
         width: 100%;
         align-items: flex-start;
-    }
-    .event__section {
-        justify-content: center;
-        margin-top: 1rem;
-    }
-    .summary {
-        margin: 0 0 2rem 0;
-    }
-    .description-event {
-        padding: 1.5rem 1rem;
-    }
-    .event-map img {
-        max-width: 100%;
     }
 }
 
@@ -425,8 +466,24 @@ body {
     }
 }
 
-.mapBox {
-  height: 420px;
-  margin-bottom: 80px;
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 40px;
+    gap: 20px;
+}
+
+.loading-message {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.event-info-container {
+    margin-bottom: 20px; 
 }
 

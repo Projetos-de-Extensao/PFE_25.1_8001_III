@@ -10,7 +10,9 @@
       "hora_inicio": "18:00",
       "hora_fim": "23:00",
       "descricao": "Festival com bandas de música urbana e DJs renomados.",
-      "imagen": "src/assets/beatifullMusic.png"
+      "imagen": "src/assets/beatifullMusic.png",
+      "imagemBanner": "src/assets/banners/festival-urbana-banner.jpg",
+      "categoria": "Pop"
     },
     {
       "id": 2,
@@ -22,7 +24,9 @@
       "hora_inicio": "17:00",
       "hora_fim": "22:00",
       "descricao": "Show com as melhores bandas de rock nacional.",
-      "imagen": "src/assets/idioShow.png"
+      "imagen": "src/assets/idioShow.png",
+      "imagemBanner": "src/assets/banners/rock-nacional-banner.jpg",
+      "categoria": "Rock"
     },
     {
       "id": 3,
@@ -34,7 +38,9 @@
       "hora_inicio": "19:00",
       "hora_fim": "01:00",
       "descricao": "Evento dedicado ao samba com artistas locais.",
-      "imagen": "src/assets/letraMusic.png"
+      "imagen": "src/assets/letraMusic.png",
+      "imagemBanner": "src/assets/banners/noite-samba-banner.jpg",
+      "categoria": "Classic"
     },
     {
       "id": 4,
@@ -46,7 +52,9 @@
       "hora_inicio": "20:00",
       "hora_fim": "04:00",
       "descricao": "Festa de música eletrônica com DJs internacionais.",
-      "imagen": "src/assets/oldMusic.png"
+      "imagen": "src/assets/oldMusic.png",
+      "imagemBanner": "src/assets/banners/festival-eletronico-banner.jpg",
+      "categoria": "Eletronic"
     },
     {
       "id": 5,
@@ -58,7 +66,9 @@
       "hora_inicio": "16:00",
       "hora_fim": "21:00",
       "descricao": "Apresentações de jazz ao ar livre.",
-      "imagen": "src/assets/piano.png"
+      "imagen": "src/assets/piano.png",
+      "imagemBanner": "src/assets/banners/jazz-praca-banner.jpg",
+      "categoria": "Classic"
     },
     {
       "id": 6,
@@ -70,7 +80,9 @@
       "hora_inicio": "18:00",
       "hora_fim": "02:00",
       "descricao": "Festival com grandes nomes do forró.",
-      "imagen": "src/assets/rapShow.png"
+      "imagen": "src/assets/rapShow.png",
+      "imagemBanner": "src/assets/banners/festival-forro-banner.jpg",
+      "categoria": "Pop"
     },
     {
       "id": 7,
@@ -82,7 +94,9 @@
       "hora_inicio": "19:30",
       "hora_fim": "00:30",
       "descricao": "Noite especial com artistas pop.",
-      "imagen": "src/assets/rockMetalMusic.png"
+      "imagen": "src/assets/rockMetalMusic.png",
+      "imagemBanner": "src/assets/banners/pop-music-banner.jpg",
+      "categoria": "Pop"
     },
     {
       "id": 8,
@@ -94,7 +108,9 @@
       "hora_inicio": "17:00",
       "hora_fim": "23:59",
       "descricao": "Os maiores nomes do sertanejo em um só evento.",
-      "imagen": "src/assets/show.png"
+      "imagen": "src/assets/show.png",
+      "imagemBanner": "src/assets/banners/festival-sertanejo-banner.jpg",
+      "categoria": "Pop"
     },
     {
       "id": 9,
@@ -106,7 +122,9 @@
       "hora_inicio": "18:00",
       "hora_fim": "22:00",
       "descricao": "Show de música popular brasileira com artistas consagrados.",
-      "imagen": "src/assets/soloMusic.png"
+      "imagen": "src/assets/soloMusic.png",
+      "imagemBanner": "src/assets/banners/mpb-vivo-banner.jpg",
+      "categoria": "Classic"
     },
     {
       "id": 10,
@@ -118,7 +136,9 @@
       "hora_inicio": "20:00",
       "hora_fim": "02:00",
       "descricao": "Festival com bandas independentes e novas tendências.",
-      "imagen": "src/assets/teatro.png"
+      "imagen": "src/assets/teatro.png",
+      "imagemBanner": "src/assets/banners/festival-indie-banner.jpg",
+      "categoria": "Rock"
     }
   ]
 }

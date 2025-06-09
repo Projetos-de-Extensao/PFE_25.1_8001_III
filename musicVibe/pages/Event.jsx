@@ -7,8 +7,6 @@ export default function Event() {
   const navigate = useNavigate();
   const { eventData } = location.state || {};
 
-
-
   return (
     <main className="container-event-page">
       <div className="event__banner">
@@ -17,7 +15,7 @@ export default function Event() {
             className="event__background-image"
             style={{
               backgroundImage:
-                `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('${eventData.img}')`,
+                `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('${eventData.banner || eventData.img}')`,
             }}
           ></div>
         </div>
@@ -76,7 +74,9 @@ export default function Event() {
 
       <section className="description-event">
         <h3>Descrição do evento</h3>
-        <strong>{eventData.title}</strong>
+        <div className="event-meta">
+          <strong>{eventData.title}</strong>
+        </div>
         <p>
           {eventData.descricao ||
             "Não há descrição disponível para este evento."}
@@ -135,7 +135,8 @@ export default function Event() {
 
       <div className="back-link">
         <button onClick={() => navigate(-1)} className="btn-back">
-          &larr; Voltar para a pesquisa
+        Voltar para a página anterior
+        <img src="src/assets/icons/arrow-left.svg" alt="Voltar" className="back-icon" />
         </button>
       </div>
     </main>
