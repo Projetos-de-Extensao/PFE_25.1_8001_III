@@ -1,10 +1,14 @@
 import React from "react";
-<<<<<<< HEAD
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Event.css";
-=======
->>>>>>> main
 
 export default function Event() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { eventData } = location.state || {};
+
+
+
   return (
     <main className="container-event-page">
       <div className="event__banner">
@@ -13,31 +17,28 @@ export default function Event() {
             className="event__background-image"
             style={{
               backgroundImage:
-<<<<<<< HEAD
-                "linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('../src/assets/photos/sinfonia2')",
-=======
-                "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('src/sinfonia2.png')",
->>>>>>> main
+                `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('${eventData.img}')`,
             }}
           ></div>
         </div>
         <div className="banner-container">
           <div className="banner-info-container">
-            <h1 className="event-name">Sinfonia Jonh no alto da Lagoa</h1>
+            <h1 className="event-name">{eventData.title}</h1>
             <section className="pre-description">
               <div className="event-information-container">
                 <p className="title">
-                  <strong>Data:</strong> 8 a 25 de Maio
+                  <strong>Data:</strong> {eventData.weekDay}, {eventData.date}
                 </p>
               </div>
               <div className="event-information-container">
                 <p className="title">
-                  <strong>Horário:</strong> Quinta a Domingo - 19h
+                  <strong>Horário:</strong> {eventData.time}
                 </p>
               </div>
               <div className="event-information-container">
                 <p className="title">
-                  <strong>Local:</strong> Teatro Sérgio Cardoso, Rio de Janeiro
+                  <strong>Local:</strong> {eventData.bairro}, {eventData.cidade} -{" "}
+                  {eventData.estado}
                 </p>
               </div>
             </section>
@@ -45,12 +46,12 @@ export default function Event() {
           <div className="floated-image">
             <img
               className="event-image"
-<<<<<<< HEAD
-              src="../src/assets/photos/sinfonia1.png"
-=======
-              src="src/sinfonia1.png"
->>>>>>> main
-              alt="Sinfonia no Teatro"
+              src={eventData.img}
+              alt={eventData.title}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "/assets/default-event.png";
+              }}
             />
             <button className="btn main-banner-btn">Comprar Ingresso</button>
           </div>
@@ -75,42 +76,25 @@ export default function Event() {
 
       <section className="description-event">
         <h3>Descrição do evento</h3>
-        <strong>THE DAVE MATTHEWS BAND COVER</strong>
+        <strong>{eventData.title}</strong>
         <p>
-          A Dave Matthews Band Cover Brasil é uma homenagem à época de ouro da
-          banda, trazendo ao público clássicos e raridades dos anos 90 e meados
-          dos anos 2000. O grupo recria com fidelidade o som autêntico da banda
-          original, utilizando a formação clássica composta por voz, violão,
-          baixo, bateria, violino e saxofone.
-        </p>
-        <p>
-          Formada em 1991 em Charlottesville, Virginia, a Dave Matthws Band
-          rapidamente se tornou uma das mais influentes e bem-sucedidas bandas de
-          rock da sua geração. Liderada pelo carismático vocalista e guitarrista
-          Dave Matthews, a banda se destacou por sua mistura única de rock, jazz,
-          blues, música clássica e elementos do folk. Com hits como “Crash Into
-          Me”, “Ants Marching” e “Satellite”, a Dave Matthews Band conquistou uma
-          base de fãs devota e levou suas performances ao vivo a um novo patamar.
-          Conhecida por sua habilidade técnica e a improvisação ao vivo, a banda se
-          manteve relevante ao longo das décadas, sendo um ícone da música americana
-          e global.
+          {eventData.descricao ||
+            "Não há descrição disponível para este evento."}
         </p>
         <div className="event-details">
           <p>
             <strong>Horários:</strong>
             <br />
-            Abertura da Casa: 19h00
+            Abertura da Casa: {eventData.time.split("às")[0].trim()}
             <br />
-            Show: 21:30
+            Show: {eventData.time.split("às")[1].trim()}
           </p>
           <p>
             <strong>ENDEREÇO</strong>
             <br />
-            Bourbon Street Music Club
+            {eventData.bairro}
             <br />
-            Rua dos Chanés 127, Moema, São Paulo - 04087-031
-            <br />
-            Próximo ao Metrô Eucaliptos
+            {eventData.cidade} - {eventData.estado}
           </p>
           <p>
             <strong>Informações, reservas de grupo e eventos corporativos:</strong>
@@ -123,18 +107,16 @@ export default function Event() {
           </p>
         </div>
         <div className="event-map">
-<<<<<<< HEAD
-                 <div id="mapBox" class="mapBox" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
-                </div>
-=======
-          <img src="src/mapa-exemplo.png" alt="Mapa do local" />
->>>>>>> main
+          <div
+            id="mapBox"
+            className="mapBox"
+            data-lat="40.701083"
+            data-lon="-74.1522848"
+            data-zoom="13"
+            data-info={`${eventData.bairro}, ${eventData.cidade} - ${eventData.estado}`}
+            data-mlat="40.701083"
+            data-mlon="-74.1522848"
+          ></div>
         </div>
         <div className="summary summary-bottom">
           <div className="range-tickets">
@@ -150,6 +132,12 @@ export default function Event() {
           </div>
         </div>
       </section>
+
+      <div className="back-link">
+        <button onClick={() => navigate(-1)} className="btn-back">
+          &larr; Voltar para a pesquisa
+        </button>
+      </div>
     </main>
   );
 }

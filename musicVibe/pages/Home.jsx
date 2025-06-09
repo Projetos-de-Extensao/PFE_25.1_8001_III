@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./styles.css";
 import List from "../src/componentes/List/List.jsx";
 import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
-=======
-import React from "react";
-import "./styles.css";
-import List from "../src/componentes/List/List.jsx";
-import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
-
->>>>>>> main
 
 function Home() {
   // Fotos do hero (adicione mais se quiser)
@@ -50,9 +42,15 @@ function Home() {
     }
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      const el = document.getElementById("my-list");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 200);
+  }, []);
+
   return (
     <>
-<<<<<<< HEAD
       <section className="hero">
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div className="hero-content">
@@ -97,16 +95,13 @@ function Home() {
         </div>
       </section>
 
-=======
->>>>>>> main
-      <section className="categories">
+      <section id="categorias" className="categories">
         <div className="container">
           <div className="categories-header">
             <h2>Navegue por Categoria</h2>
             <button className="btn btn-outline">Ver Mais</button>
           </div>
           <hr />
-<<<<<<< HEAD
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <button className="arrow" onClick={scrollLeft}>
               <img src="src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
@@ -131,50 +126,14 @@ function Home() {
                 </div>
               ))}
             </div>
-            <button className="arrow" onClick={scrollRight}>
+            <button id="my-list" className="arrow" onClick={scrollRight}>
               <img src="src/assets/icons/setaDireita.svg" alt="Seta Direita" />
-=======
-          <div className="category-list">
-            <button className="arrow">
-              <img src="src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
-            </button>
-            <div className="category">
-              <img
-                src="src/assets/photos/Rectangle 1361.png"
-                alt="Show"
-              />
-              <p>Show</p>
-            </div>
-            <div className="category">
-              <img
-                src="src/assets/photos/Rectangle 1361-1.png"
-                alt="Rock"
-              />
-              <p>Rock</p>
-            </div>
-            <div className="category">
-              <img src="src/assets/photos/Rectangle 1361-2.png" alt="Pop" />
-              <p>Pop</p>
-            </div>
-            <div className="category">
-              <img
-                src="src/assets/photos/Rectangle 1361-3.png"
-                alt="Eletrônica"
-              />
-              <p>Eletrônica</p>
-            </div>
-            <button className="arrow">
-              <img
-                src="src/assets/icons/setaDireita.svg"
-                alt="Seta Direita"
-              />
->>>>>>> main
             </button>
           </div>
         </div>
       </section>
 
-      <section className="top-picks">
+      <section  className="top-picks">
         <div className="container">
           <div className="top-picks-filter">
             <h2>Principais eventos Perto de Você</h2>
@@ -183,7 +142,7 @@ function Home() {
             </button>
           </div>
           <hr />
-          <List/>
+          <List />
           <WhiteBoard />
         </div>
       </section>

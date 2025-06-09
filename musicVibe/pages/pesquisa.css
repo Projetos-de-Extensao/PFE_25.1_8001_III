@@ -56,12 +56,30 @@ body, html {
     align-items: center;
     margin-bottom: 1.25rem;
     border-bottom: 1px solid var(--color-footer-border);
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .top-picks {
     padding: 40px 20px;
     background-color: var(--color-bg);
 
+}
+
+.active-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
 }
 
 
