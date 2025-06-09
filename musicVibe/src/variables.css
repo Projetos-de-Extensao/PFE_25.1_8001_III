@@ -1,0 +1,40 @@
+/* Global CSS variables */
+:root {
+  /* Primary colors */
+  --color-primary: #007bff;
+  --color-primary-dark: #0056b3;
+  
+  /* Background colors */
+  --color-header-bg: #04092C;
+  --color-header-bg-alt: #0a1633;
+  --color-footer-bg: #001f3f;
+  --color-bg: #f8f9fa;
+  --color-bg-white: #fff;
+  --color-bg-light: #f6f6f6;
+  
+  /* Shadow effects */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-2: rgba(0, 0, 0, 0.2);
+  --color-shadow-focus: #007bff33;
+  
+  /* Text colors */
+  --color-text: #222;
+  --color-text-light: #6d6d6d;
+  --color-text-secondary: #222;
+  --color-label: #04092C;
+  
+  /* Link colors */
+  --color-link: #007bff;
+  --color-link-hover: #0056b3;
+  
+  /* Border colors */
+  --color-footer-border: #007bff;
+  --color-border: #e5e8ef;
+  
+  /* Button colors */
+  --color-btn-bg: #000;
+  --color-btn-hover: #007bff;
+  
+  /* Misc colors */
+  --color-footer-bottom: #aaa;
+}

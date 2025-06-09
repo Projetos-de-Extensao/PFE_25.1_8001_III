@@ -1,125 +1,76 @@
 import React, { useEffect, useState } from "react";
-<<<<<<< HEAD
-import { useNavigate } from "react-router-dom"; // Importação necessária
+import { useNavigate } from 'react-router-dom';
 import "./list.css";
 import eventosData from "../../eventos.json";
 
-// Importe as imagens manualmente
-import img1 from "../../assets/photos/Rectangle 1363.png";
-import img2 from "../../assets/photos/Rectangle 1363-1.png";
-import img3 from "../../assets/photos/Rectangle 1363-2.png";
-import img4 from "../../assets/photos/Rectangle 1361-3.png";
-
-// Mapeamento de imagens por id do evento
-const eventImages = {
-    1: img1,
-    2: img2,
-    3: img3,
-    4: img4,
-    // Adicione mais imagens conforme necessário
-};
-
-// Função para formatar a data no formato "dd/MM/yyyy"
-function formatDate(ev) {
-    const [year, month, day] = ev.data.split("-");
-    return `${day}/${month}/${year}`;
+// Função para obter o dia da semana a partir da data
+function getWeekDay(dateStr) {
+    const date = new Date(dateStr);
+    const options = { weekday: 'short' };
+    return new Intl.DateTimeFormat('pt-BR', options).format(date);
 }
 
-const getAllEvents = () => {
-    // Associa cada evento à sua imagem pelo id
-    return eventosData.eventos.map(ev => ({
-        ...ev,
-        img: eventImages[ev.id] || img1, // fallback para img1 se não houver imagem específica
-        title: ev.nome,
-        date: formatDate(ev),
-        weekDay: ev.dia_semana,
-        time: `${ev.hora_inicio} - ${ev.hora_fim}`,
-        // outros campos conforme necessário
-    }));
-};
 
-const filterEvents = (events, filters) => {
-    return events.filter(ev => {
-        if (filters.date && ev.date !== filters.date) return false;
-        if (filters.name && !ev.title.toLowerCase().includes(filters.name.toLowerCase())) return false;
-        // Adapte para outros filtros se necessário
-=======
-import "./list.css";
 
-const allEvents = [
-    {
-        img: "/assets/photos/Rectangle 1363.png",
-        date: "2024-06-10",
-        category: "alimentos",
-        cep: "12345678",
-        name: "Feira Gastronômica",
-        title: "Feira Gastronômica - Domingo",
-        time: "Dom - 10:00 AM",
-    },
-    {
-        img: "/assets/photos/Rectangle 1363-1.png",
-        date: "2024-06-12",
-        category: "servicos",
-        cep: "87654321",
-        name: "Workshop Serviços",
-        title: "Workshop de Serviços",
-        time: "Qua - 14:00",
-    },
-    {
-        img: "/assets/photos/Rectangle 1363-2.png",
-        date: "2024-06-15",
-        category: "educacao",
-        cep: "11223344",
-        name: "Palestra Educação",
-        title: "Palestra sobre Educação",
-        time: "Sab - 09:00",
-    },
-    {
-        img: "/assets/photos/Rectangle 1361-3.png",
-        date: "2024-06-20",
-        category: "eventos",
-        cep: "99887766",
-        name: "Show de Rock",
-        title: "Show de Rock Nacional",
-        time: "Sex - 21:00",
-    },
-];
+// Mapeia os eventos do JSON para o formato usado na lista
+const allEvents = eventosData.eventos.map(ev => ({
+    img: ev.imagen,
+    date: ev.data,
+    name: ev.nome,
+    title: ev.nome,
+    time: ` ${ev.hora_inicio} às ${ev.hora_fim}`,
+    cidade: ev.cidade,
+    estado: ev.estado,
+    weekDay: getWeekDay(ev.data),
+    bairro: ev.bairro,
+    categoria: ev.categoria,
+    descricao: ev.descricao,
+}));
 
 const filterEvents = (filters) => {
     return allEvents.filter(ev => {
-        if (filters.date && ev.date !== filters.date) return false;
-        if (filters.category && ev.category !== filters.category) return false;
-        if (filters.cep && ev.cep !== filters.cep) return false;
+        // Handle date range filtering
+        if (filters.dateRange) {
+            const selectedDate = new Date(filters.dateRange);
+            const eventDate = new Date(ev.date);
+            
+            // If the selected date is after the event date plus 7 days or before the event date, filter out
+            const oneWeekAfterEvent = new Date(eventDate);
+            oneWeekAfterEvent.setDate(eventDate.getDate() + 7);
+            
+            if (selectedDate < eventDate || selectedDate > oneWeekAfterEvent) {
+                return false;
+            }
+        }
+        
+        // Handle legacy date filters for backward compatibility
+        if (filters.dateStart && ev.date < filters.dateStart) return false;
+        if (filters.dateEnd && ev.date > filters.dateEnd) return false;
+        
+        if (filters.category && ev.categoria !== filters.category) return false;
         if (filters.name && !ev.name.toLowerCase().includes(filters.name.toLowerCase())) return false;
->>>>>>> main
+        if (filters.bairro && filters.bairro !== "" && ev.bairro && !ev.bairro.toLowerCase().includes(filters.bairro.toLowerCase())) return false;
         return true;
     });
 };
 
 const List = ({ filters }) => {
-<<<<<<< HEAD
-    const [results, setResults] = useState(getAllEvents());
-    const [loading, setLoading] = useState(false);
-    const navigate = useNavigate(); // Inicialização da função navigate
-
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            const allEvents = getAllEvents();
-            setResults(filterEvents(allEvents, filters || {}));
-=======
     const [results, setResults] = useState(allEvents);
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         setLoading(true);
-        // Simula fetch GET /search
         setTimeout(() => {
             setResults(filterEvents(filters || {}));
->>>>>>> main
             setLoading(false);
         }, 500);
     }, [filters]);
+
+    const handleReserveClick = (event) => {
+        // You can pass event data via state to the Event page
+        navigate('/event', { state: { eventData: event } });
+    };
 
     return (
         <section className="top-picks">
@@ -128,13 +79,16 @@ const List = ({ filters }) => {
                     {loading && <div>Carregando...</div>}
                     {!loading && results.length === 0 && <div>Nenhum resultado encontrado.</div>}
                     {!loading && results.map((event, idx) => (
-<<<<<<< HEAD
-                        <div className="event" key={event.id || idx}>
+                        <div className="event" key={idx}>
                             <img 
                                 src={event.img} 
                                 alt={event.title}
                                 width={120}
                                 height={120}
+                                onError={e => {
+                                    e.target.onerror = null;
+                                    e.target.src = "/assets/default-event.png";
+                                }}
                             />
                             <div className="event-details">
                                 <p>{event.weekDay}, {event.date}</p>
@@ -143,30 +97,21 @@ const List = ({ filters }) => {
                                 <p>{event.cidade} - {event.estado}</p>
                             </div>
                             <div className="event-actions">
-                                <button className="btn btn-outline" onClick={() => navigate('/event')}>Ver Detalhes</button>
-                                <button className="btn" onClick={() => navigate('/event')}>Reservar Agora</button>
+                                <button 
+                                    className="btn btn-outline" 
+                                    onClick={() => handleReserveClick(event)}
+                                >
+                                    Ver Detalhes
+                                </button>
+                                <button 
+                                    className="btn" 
+                                    onClick={() => handleReserveClick(event)}
+                                >
+                                    Reservar Agora
+                                </button>
                             </div>
                         </div>
                     ))}
-=======
-                        <div className="event" key={idx}>
-                            <img 
-                                src={event.img} 
-                                alt={event.title}
-                            />
-                            <div className="event-details">
-                                <p>{event.date}</p>
-                                <p>{event.time}</p>
-                                <p>{event.title}</p>
-                            </div>
-                            <div className="event-actions">
-                                <button className="btn btn-outline">Ver Detalhes</button>
-                                <button className="btn">Reservar Agora</button>
-                            </div>
-                        </div>
-                    ))}
-                    
->>>>>>> main
                 </div>
             </div>
         </section>
