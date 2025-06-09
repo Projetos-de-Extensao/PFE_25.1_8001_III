@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import List from "../src/componentes/List/List";
+import "./pesquisa.css";
 
 // Map of category values to display names
 const categoryDisplayNames = {

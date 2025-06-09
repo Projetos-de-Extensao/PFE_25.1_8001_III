@@ -2,6 +2,8 @@ import React, { useRef, useState, useEffect } from "react";
 import "./styles.css";
 import List from "../src/componentes/List/List.jsx";
 import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
+import Pesquisa from "./Pesquisa.jsx";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   // Fotos do hero (adicione mais se quiser)
@@ -22,7 +24,7 @@ function Home() {
 
   // Mostra todas as categorias, mas permite rolar para os lados
   const categories = [
-    { img: "src/assets/photos/Rectangle 1361.png", label: "Show" },
+    { img: "src/assets/photos/Rectangle 1361.png", label: "Show"  },
     { img: "src/assets/photos/Rectangle 1361-1.png", label: "Rock" },
     { img: "src/assets/photos/Rectangle 1361-2.png", label: "Pop" },
     { img: "src/assets/photos/Rectangle 1361-3.png", label: "Eletrônica" },
@@ -42,12 +44,11 @@ function Home() {
     }
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      const el = document.getElementById("my-list");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 200);
-  }, []);
+  const navigate = useNavigate();
+
+  const handleCategoryClick = (cat) => {
+    navigate("/pesquisa", { state: { categoria: cat.label } });
+  };
 
   return (
     <>
@@ -99,7 +100,6 @@ function Home() {
         <div className="container">
           <div className="categories-header">
             <h2>Navegue por Categoria</h2>
-            <button className="btn btn-outline">Ver Mais</button>
           </div>
           <hr />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -120,8 +120,13 @@ function Home() {
               }}
             >
               {categories.map((cat, idx) => (
-                <div className="category" key={cat.label + idx}>
-                  <img src={cat.img} alt={cat.label} />
+                <div
+                  className="category"
+                  key={cat.label + idx}
+                  onClick={() => handleCategoryClick(cat)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <img src={cat.img} alt={cat.label}/>
                   <p>{cat.label}</p>
                 </div>
               ))}
@@ -137,11 +142,7 @@ function Home() {
         <div className="container">
           <div className="top-picks-filter">
             <h2>Principais eventos Perto de Você</h2>
-            <button className="btn btn-outline">
-              <img src="/src/filter.png" alt="" /> Filtrar
-            </button>
           </div>
-          <hr />
           <List />
           <WhiteBoard />
         </div>

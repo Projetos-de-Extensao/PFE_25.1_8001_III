@@ -11,7 +11,7 @@
       "hora_fim": "23:00",
       "descricao": "Festival com bandas de música urbana e DJs renomados.",
       "imagen": "src/assets/beatifullMusic.png",
-      "imagemBanner": "src/assets/banners/festival-urbana-banner.jpg",
+      "imagemBanner": "src/assets/banners/violao.png",
       "categoria": "Pop"
     },
     {
@@ -25,7 +25,7 @@
       "hora_fim": "22:00",
       "descricao": "Show com as melhores bandas de rock nacional.",
       "imagen": "src/assets/idioShow.png",
-      "imagemBanner": "src/assets/banners/rock-nacional-banner.jpg",
+      "imagemBanner": "src/assets/banners/predio.png",
       "categoria": "Rock"
     },
     {
@@ -39,7 +39,7 @@
       "hora_fim": "01:00",
       "descricao": "Evento dedicado ao samba com artistas locais.",
       "imagen": "src/assets/letraMusic.png",
-      "imagemBanner": "src/assets/banners/noite-samba-banner.jpg",
+      "imagemBanner": "src/assets/banners/cavalo.png",
       "categoria": "Classic"
     },
     {
@@ -53,7 +53,7 @@
       "hora_fim": "04:00",
       "descricao": "Festa de música eletrônica com DJs internacionais.",
       "imagen": "src/assets/oldMusic.png",
-      "imagemBanner": "src/assets/banners/festival-eletronico-banner.jpg",
+      "imagemBanner": "src/assets/banners/psicodelico.png",
       "categoria": "Eletronic"
     },
     {
@@ -67,7 +67,7 @@
       "hora_fim": "21:00",
       "descricao": "Apresentações de jazz ao ar livre.",
       "imagen": "src/assets/piano.png",
-      "imagemBanner": "src/assets/banners/jazz-praca-banner.jpg",
+      "imagemBanner": "src/assets/banners/rosa.png",
       "categoria": "Classic"
     },
     {

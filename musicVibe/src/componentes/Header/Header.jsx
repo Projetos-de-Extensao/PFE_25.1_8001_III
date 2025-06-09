@@ -28,8 +28,7 @@ function Header({ onSearch })  {
     name: ""
   });
   const [error, setError] = useState("");
-  const [customBairro, setCustomBairro] = useState(""); // para digitação livre
-
+  const [customBairro, setCustomBairro] = useState(""); 
   const bairros = getBairrosUnicos();
 
   const handleChange = e => {
@@ -119,7 +118,7 @@ function Header({ onSearch })  {
                       {bairros.map(b => (
                         <option key={b} value={b}>{b}</option>
                       ))}
-                      <option value="__custom__">Outro...</option>
+                      <option value="">Outro...</option>
                   </select>
                   {customBairro && !bairros.includes(customBairro) && (
                     <input

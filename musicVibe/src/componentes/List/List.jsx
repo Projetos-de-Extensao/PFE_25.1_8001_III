@@ -94,10 +94,10 @@ const List = ({ filters }) => {
                                 }}
                             />
                             <div className="event-details">
-                                <p>{event.weekDay}, {event.date}</p>
-                                <p>{event.time}</p>
-                                <p>{event.title}</p>
+                                <p><strong>{event.title}</strong></p>
                                 <p>{event.cidade} - {event.estado}</p>
+                                <p>{event.time}</p>
+                                <p>{event.weekDay}, {event.date}</p>
                             </div>
                             <div className="event-actions">
                                 <button 

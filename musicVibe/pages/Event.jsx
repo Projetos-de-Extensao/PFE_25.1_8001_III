@@ -8,6 +8,7 @@ export default function Event() {
   const { eventData } = location.state || {};
 
   return (
+    <div>
     <main className="container-event-page">
       <div className="event__banner">
         <div className="event__background-wrapper">
@@ -51,7 +52,6 @@ export default function Event() {
                 e.target.src = "/assets/default-event.png";
               }}
             />
-            <button className="btn main-banner-btn">Comprar Ingresso</button>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Event() {
               <span className="ticket-payment">Pague em até 12x</span>
             </div>
             <div className="buy-tickets">
-              <button className="btn">Comprar ingresso</button>
+              <button className="btn" ><a href="/Carrinho">Comprar ingresso</a></button>
             </div>
           </div>
         </div>
@@ -106,18 +106,13 @@ export default function Event() {
             Horário: Segunda à sábado das 11:00 às 19:00h
           </p>
         </div>
+
         <div className="event-map">
-          <div
-            id="mapBox"
-            className="mapBox"
-            data-lat="40.701083"
-            data-lon="-74.1522848"
-            data-zoom="13"
-            data-info={`${eventData.bairro}, ${eventData.cidade} - ${eventData.estado}`}
-            data-mlat="40.701083"
-            data-mlon="-74.1522848"
-          ></div>
+          <div id="mapBox" className="mapBox">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235058.73708681372!2d-43.51784249259719!3d-22.994646767201488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd0b908ec9f2b%3A0x97db68933b74396d!2sUnidade%20Ibmec!5e0!3m2!1spt-BR!2sbr!4v1749499327950!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
+        
         <div className="summary summary-bottom">
           <div className="range-tickets">
             <div className="ticket-information">
@@ -127,7 +122,7 @@ export default function Event() {
               <span className="ticket-payment">Pague em até 12x</span>
             </div>
             <div className="buy-tickets">
-              <button className="btn">Comprar ingresso</button>
+              <button className="btn"><a href="/Carrinho">Comprar ingresso</a></button>
             </div>
           </div>
         </div>
@@ -135,10 +130,10 @@ export default function Event() {
 
       <div className="back-link">
         <button onClick={() => navigate(-1)} className="btn-back">
-        Voltar para a página anterior
-        <img src="src/assets/icons/arrow-left.svg" alt="Voltar" className="back-icon" />
+        <img src="src/assets/icons/setaEsquerda.svg" alt="Voltar" className="back-icon" />
         </button>
       </div>
     </main>
+    </div>
   );
 }
