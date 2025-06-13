@@ -3,7 +3,6 @@ import "./sobre.css";
 function Sobre() {
   return (
     <>
-      {/* Hero banner com imagem de multidão */}
       <section className="hero-banner">
         <div className="overlay">
           <h1>NOSSA HISTORIA</h1>

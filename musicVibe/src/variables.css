@@ -6,8 +6,8 @@
   
   /* Background colors */
   --color-header-bg: #04092C;
-  --color-header-bg-alt: #0a1633;
-  --color-footer-bg: #001f3f;
+  --color-header-bg-alt: #04092C;
+  --color-footer-bg: #04092C;
   --color-bg: #f8f9fa;
   --color-bg-white: #fff;
   --color-bg-light: #f6f6f6;
@@ -38,3 +38,4 @@
   /* Misc colors */
   --color-footer-bottom: #aaa;
 }
+ 

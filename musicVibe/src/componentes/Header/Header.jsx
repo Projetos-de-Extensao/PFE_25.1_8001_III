@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import React, { useState } from "react";
 import "./Header.css";
 import eventosData from "../../eventos.json";
@@ -20,6 +20,7 @@ function getBairrosUnicos() {
 
 function Header({ onSearch })  {
   const navigate = useNavigate();
+  const location = useLocation();
   const { openLoginModal, isLoggedIn } = useLogin();
   const [filters, setFilters] = useState({
     dateRange: "",
@@ -47,7 +48,11 @@ function Header({ onSearch })  {
     setError("");
     if (onSearch) onSearch(filters);
     localStorage.setItem("app-filters", JSON.stringify(filters));
-    navigate('/pesquisa');
+    if (location.pathname === '/pesquisa') {
+      window.dispatchEvent(new Event("filters-updated"));
+    } else {
+      navigate('/pesquisa');
+    }
   };
 
   return (  
@@ -59,7 +64,7 @@ function Header({ onSearch })  {
               style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}
               aria-label="Ir para a página inicial"
             >
-                <img src="./src/assets/icons/logoMusicaVibe.svg" alt="Logo MusicVibe" />
+                <img src="./src/assets/icons/logoMusicaVibe.png" alt="Logo MusicVibe" />
             </button>
             <div className="header-right">
                 <nav className="nav">

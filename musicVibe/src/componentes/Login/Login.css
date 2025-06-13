@@ -1,20 +1,3 @@
-/* Variáveis de cores comuns */
-:root {
-    --color-primary: #007bff;
-    --color-primary-dark: #0056b3;
-    --color-header-bg: #0a1633;
-    --color-bg: #fff;
-    --color-bg-light: #f6f6f6;
-    --color-shadow: rgba(10,22,51,0.10);
-    --color-shadow-2: rgba(10,22,51,0.04);
-    --color-shadow-focus: #007bff;
-    --color-text: #222;
-    --color-label: #0a1633;
-    --color-link: #007bff;
-    --color-link-hover: #0056b3;
-    --color-border: #e3e8ee;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -230,6 +213,20 @@ body {
     box-shadow: 0 2px 8px 0 rgba(33,162,250,0.08);
     transition: background 0.2s;
 }
+.signin-btn:hover {
+    background: var(--color-primary-dark);
+}
+
+@media (max-width: 600px) {
+    .login-modal-content {
+        padding: 24px 8px 24px 8px;
+        max-width: 98vw;
+    }
+    .signin-title {
+        font-size: 1.5rem;
+    }
+}
+
 .signin-btn:hover {
     background: var(--color-primary-dark);
 }

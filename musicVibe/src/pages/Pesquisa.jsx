@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import List from "../src/componentes/List/List";
+import List from "../componentes/List/List";
 import "./pesquisa.css";
 
 // Map of category values to display names
@@ -18,7 +18,8 @@ function Pesquisa() {
     name: ""
   });
 
-  useEffect(() => {
+  // Função para carregar filtros do localStorage
+  const loadFilters = () => {
     const savedFilters = localStorage.getItem("app-filters");
     if (savedFilters) {
       const parsedFilters = JSON.parse(savedFilters);
@@ -30,11 +31,20 @@ function Pesquisa() {
       
       setFilters(parsedFilters);
     }
+  };
+
+  useEffect(() => {
+    loadFilters();
 
     setTimeout(() => {
       const el = document.getElementById("list-section");
       if (el) el.scrollIntoView({ behavior: "smooth" });
     }, 200);
+
+    // Adiciona listener para pesquisas subsequentes
+    const handler = () => loadFilters();
+    window.addEventListener("filters-updated", handler);
+    return () => window.removeEventListener("filters-updated", handler);
   }, []);
 
   return (
@@ -59,9 +69,7 @@ function Pesquisa() {
               </div>
             )}
           </div>
-          <button className="btn btn-outline">
-            <img src="./src/assets/icons/filter.png" alt="" /> Filtrar
-          </button>
+       
         </div>
         
         {/* Adiciona o componente List com os filtros */}

@@ -1,17 +1,5 @@
 :root {
-    --color-primary: #007bff;
-    --color-primary-dark: #0056b3;
-    --color-header-bg: #04092C;
-    --color-footer-bg: #001f3f;
-    --color-bg: #f8f9fa;
-    --color-bg-white: #fff;
-    --color-shadow: rgba(0, 0, 0, 0.1);
-    --color-shadow-2: rgba(0, 0, 0, 0.2);
-    --color-text: #333;
-    --color-link: #007bff;
-    --color-link-hover: #0056b3;
-    --color-footer-border: #007bff;
-    --color-footer-bottom: #aaa;
+    /* Todas as variáveis removidas daqui, pois já estão em variables.css */
 }
 
 .container {
@@ -58,14 +46,13 @@
     font-weight: 700;
     color: #fff;
     letter-spacing: -0.5px;
-    height: 48px;
+    height: 30px;
 }
 .logo img {
-    margin-top: 30px;
+    margin-top: 70px;
     vertical-align: middle;
     object-fit: contain;
-    max-height: 100px;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .header-right {
@@ -329,6 +316,18 @@ body {
   position: relative;
 }
 
+.date-range-input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.date-range-input:focus {
+  border-color: #0a0049;
+  outline: none;
+}
 .date-range-input {
   padding: 8px 12px;
   border-radius: 4px;

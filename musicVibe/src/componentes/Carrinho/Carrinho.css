@@ -13,6 +13,7 @@
     --color-btn-hover: #007bff;
 }
 
+/* Estilos do carrinho */
 .carrinho-main {
     display: flex;
     justify-content: flex-start;
@@ -220,7 +221,6 @@
         font-size: 1.05rem;
     }
 }
-=======
 /* Variáveis de cores comuns */
 :root {
     --color-primary: #007bff;
@@ -443,4 +443,3 @@
         font-size: 1.05rem;
     }
 }
->>>>>>> f5470e2a280708e9eaaa6e36ae2c253abf5846fb

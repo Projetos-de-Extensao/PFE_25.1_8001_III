@@ -1,17 +1,5 @@
 /* Variáveis de cores comuns */
-:root {
-    --color-primary: #007bff;
-    --color-primary-dark: #0056b3;
-    --color-bg: #fff;
-    --color-bg-light: #f6f6f6;
-    --color-shadow: none;
-    --color-text: #111;
-    --color-text-secondary: #222;
-    --color-label: #111;
-    --color-border: #e5e8ef;
-    --color-btn-bg: #000;
-    --color-btn-hover: #007bff;
-}
+/* Todas as variáveis removidas daqui, pois já estão em variables.css */
 
 /* Carrinho */
 .carrinho-main {
@@ -222,3 +210,15 @@
         font-size: 1.05rem;
     }
 }
+    .carrinho-img {
+        width: 60px;
+        height: 60px;
+    }
+    .carrinho-item {
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+    .carrinho-titulo {
+        font-size: 1.05rem;
+    }
+

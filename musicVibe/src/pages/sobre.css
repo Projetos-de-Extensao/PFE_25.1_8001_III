@@ -2,8 +2,7 @@
 :root {
     --color-primary: #007bff;
     --color-primary-dark: #0056b3;
-    --color-header-bg: #04092C;
-    --color-footer-bg: #001f3f;
+    
     --color-bg: #f8f9fa;
     --color-bg-white: #fff;
     --color-bg-light: #f6f6f6;
@@ -13,8 +12,6 @@
     --color-label: #04092C;
     --color-link: #007bff;
     --color-link-hover: #0056b3;
-    --color-footer-border: #007bff;
-    --color-footer-bottom: #aaa;
 }
 
 /* Reset e base */
@@ -268,15 +265,7 @@ body, html {
     width: 18px;
     height: 18px;
 }
-.footer-bottom {
-    border-top: 1px solid #22305a;
-    margin-top: 32px;
-    padding: 16px 0 8px 0;
-    text-align: center;
-    font-size: 13px;
-    color: #b0b0b0;
-    background: #0a1633;
-}
+
 @media (max-width: 700px) {
     .footer-columns {
         flex-direction: column;

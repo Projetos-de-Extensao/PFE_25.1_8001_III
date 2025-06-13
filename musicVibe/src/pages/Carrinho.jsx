@@ -30,7 +30,7 @@ function Carrinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pague em até 12x</span>
               <span className="carrinho-preco">R$99,00</span>
-              <img src="src/assets/icons/lock.svg" alt="Cadeado" className="carrinho-lock" />
+              <img src="../src/assets/icons/lock.svg" alt="Cadeado" className="carrinho-lock" />
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ function Carrinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pague em até 12x</span>
               <span className="carrinho-preco">R$99,00</span>
-              <img src="src/assets/icons/lock.svg" alt="Cadeado" className="carrinho-lock" />
+              <img src="../src/assets/icons/lock.svg" alt="Cadeado" className="carrinho-lock" />
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ function Carrinho() {
             <div className="carrinho-pagamento">
               <span className="carrinho-parcelamento">Pague em até 12x</span>
               <span className="carrinho-preco">R$99,00</span>
-              <img src="src/assets/icons/lock.svg" alt="Cadeado" className="carrinho-lock" />
+              <img src="../src/assets/icons/lock.svg" alt="Cadeado" className="carrinho-lock" />
             </div>
           </div>
         </div>

@@ -9,12 +9,14 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  background-color: #0a0049;
+  background-color: none;
   transition: background-color 0.2s;
 }
 
 .user-profile:hover {
-  background-color: #08005e;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    padding-right: 5px;
 }
 
 .avatar-container {

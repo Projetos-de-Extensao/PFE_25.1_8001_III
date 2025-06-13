@@ -1,19 +1,5 @@
-/* Variáveis de cores comuns */
-:root {
-    --color-primary: #007bff;
-    --color-primary-dark: #0056b3;
-    --color-header-bg: #04092C;
-    --color-footer-bg: #001f3f;
-    --color-bg: #f8f9fa;
-    --color-bg-white: #fff;
-    --color-shadow: rgba(0, 0, 0, 0.1);
-    --color-shadow-2: rgba(0, 0, 0, 0.2);
-    --color-text: #333;
-    --color-link: #007bff;
-    --color-link-hover: #0056b3;
-    --color-footer-border: #007bff;
-    --color-footer-bottom: #aaa;
-}
+/* Variáveis de cores  */
+
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
@@ -242,6 +228,15 @@ body {
 .hero-arrow-right {
     right: 24px;
 }
+.hero-arrow:hover {
+    background: var(--color-primary);
+    opacity: 1;
+}
+.hero-arrow img {
+    width: 30px;
+    height: 30px;
+}
+  
 .hero-arrow:hover {
     background: var(--color-primary);
     opacity: 1;

@@ -1,15 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import "./styles.css";
-import List from "../src/componentes/List/List.jsx";
-import WhiteBoard from "../src/componentes/white-board/WhiteBoard.jsx"; 
-import Pesquisa from "./Pesquisa.jsx";
+import List from "../componentes/List/List.jsx";
+import WhiteBoard from "../componentes/white-board/WhiteBoard.jsx"; 
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   // Fotos do hero (adicione mais se quiser)
   const heroImages = [
-    { src: "src/assets/photos/Rectangle 5.png", alt: "homem com microfone" },
-    // { src: "src/assets/photos/OutraImagem.png", alt: "Outra imagem" },
+    { src: "../src/assets/photos/Rectangle 5.png", alt: "homem com microfone" },
+    // { src: "../src/assets/photos/OutraImagem.png", alt: "Outra imagem" },
   ];
   const [heroIndex, setHeroIndex] = useState(0);
   const heroRef = useRef(null);
@@ -24,10 +23,10 @@ function Home() {
 
   // Mostra todas as categorias, mas permite rolar para os lados
   const categories = [
-    { img: "src/assets/photos/Rectangle 1361.png", label: "Show"  },
-    { img: "src/assets/photos/Rectangle 1361-1.png", label: "Rock" },
-    { img: "src/assets/photos/Rectangle 1361-2.png", label: "Pop" },
-    { img: "src/assets/photos/Rectangle 1361-3.png", label: "Eletrônica" },
+    { img: "../src/assets/photos/Rectangle 1361.png", label: "Show"  },
+    { img: "../src/assets/photos/Rectangle 1361-1.png", label: "Rock" },
+    { img: "../src/assets/photos/Rectangle 1361-2.png", label: "Pop" },
+    { img: "../src/assets/photos/Rectangle 1361-3.png", label: "Eletrônica" },
   ];
 
   const listRef = useRef(null);
@@ -77,7 +76,7 @@ function Home() {
                 zIndex: 2,
               }}
             >
-              <img src="src/assets/icons/setaEsquerda.svg" alt="Anterior" />
+              <img src="../src/assets/icons/setaEsquerda.svg" alt="Anterior" />
             </button>
             <button
               className="arrow hero-arrow hero-arrow-right"
@@ -90,7 +89,7 @@ function Home() {
                 zIndex: 2,
               }}
             >
-              <img src="src/assets/icons/setaDireita.svg" alt="Próxima" />
+              <img src="../src/assets/icons/setaDireita.svg" alt="Próxima" />
             </button>
           </div>
         </div>
@@ -104,7 +103,7 @@ function Home() {
           <hr />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <button className="arrow" onClick={scrollLeft}>
-              <img src="src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
+              <img src="../src/assets/icons/setaEsquerda.svg" alt="Seta Esquerda" />
             </button>
             <div
               className="category-list"
@@ -132,7 +131,7 @@ function Home() {
               ))}
             </div>
             <button id="my-list" className="arrow" onClick={scrollRight}>
-              <img src="src/assets/icons/setaDireita.svg" alt="Seta Direita" />
+              <img src="../src/assets/icons/setaDireita.svg" alt="Seta Direita" />
             </button>
           </div>
         </div>

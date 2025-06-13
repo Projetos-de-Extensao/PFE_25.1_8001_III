@@ -1,22 +1,3 @@
-/* Variáveis de cores comuns */
-:root {
-    --color-primary: #007bff;
-    --color-primary-dark: #0056b3;
-    --color-header-bg: #04092C;
-    --color-footer-bg: #001f3f;
-    --color-bg: #f8f9fa;
-    --color-bg-white: #fff;
-    --color-bg-light: #f6f6f6;
-    --color-shadow: rgba(0, 0, 0, 0.1);
-    --color-shadow-2: rgba(0, 0, 0, 0.2);
-    --color-text: #222;
-    --color-label: #04092C;
-    --color-link: #007bff;
-    --color-link-hover: #0056b3;
-    --color-footer-border: #007bff;
-    --color-footer-bottom: #aaa;
-}
-
 /* Reset e base */
 body, html {
     margin: 0;
@@ -65,6 +46,23 @@ body, html {
     background-color: var(--color-bg);
 
 }
+
+.active-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
 
 .active-filters {
   display: flex;
