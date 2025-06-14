@@ -4,21 +4,28 @@
 }
 
 .white-background {
-    background-image: linear-gradient(to top, var(--color-bg-white) 25%, transparent 100%);
-    width: 100%;
+    background: rgba(255,255,255,0.85);
+    width: 100vw;
     height: 200px;
-    z-index: 100; /* bem acima do padrão */
-    position: relative; /* para sobrepor o que está acima */
-    margin-top: -120px; /* sobe e sobrepõe o conteúdo acima */
-    pointer-events: none; /* não bloqueia clique do conteúdo abaixo, se necessário */
-    margin-bottom: 40rem;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    pointer-events: auto;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.05);
 
 }
+
 .white-background-bottom {
     position: absolute;
     bottom: 20px;
-    left: 500px;
-    pointer-events: auto; /* botão continua clicável */
-    margin-bottom: 40rem;
-
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+    margin-bottom: 0;
 }
