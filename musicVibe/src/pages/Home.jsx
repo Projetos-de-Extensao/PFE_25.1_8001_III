@@ -8,6 +8,7 @@ function Home() {
   // Fotos do hero (adicione mais se quiser)
   const heroImages = [
     { src: "../src/assets/photos/Rectangle 5.png", alt: "homem com microfone" },
+    { src: "../src/assets/photos/Rectangle 51.png", alt: "homem com microfone na multitão" },
     // { src: "../src/assets/photos/OutraImagem.png", alt: "Outra imagem" },
   ];
   const [heroIndex, setHeroIndex] = useState(0);
