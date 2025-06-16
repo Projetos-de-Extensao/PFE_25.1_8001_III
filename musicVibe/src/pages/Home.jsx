@@ -27,7 +27,7 @@ function Home() {
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div className="hero-content">
             <h1>Encontre sua vibe musical!!</h1>
-            <button className="btn">Reserve Agora</button>
+            <button className="btn" onClick={() => window.location.href = '/pesquisa'}>Reserve Agora</button>
           </div>
           <div style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
             <img
